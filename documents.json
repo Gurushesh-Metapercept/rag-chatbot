@@ -1,0 +1,2972 @@
+[
+  {
+    "pageContent": "Meta-title \nAI-Powered Content Conversion & DITA-XML Publishing | metR By Metapercept \nMeta-description \nConvert DOCX, HTML, Markdown, FrameMaker, PDF, Arbortext XML, JSON, and more into \nclean DITA-XML. Validate differences, govern versions (no advanced Git skills needed), and \npublish brand-accurate PDF/HTML via DITA-OT. Convert structured content into knowledge \ngraphs for LLMs. \nSEO Keywords \nDITA-XML conversion, content migration tool, FrameMaker to DITA, Arbortext XML conversion,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "DITA-XML conversion, content migration tool, FrameMaker to DITA, Arbortext XML conversion, \nXML conversion software, difference validation, Git content governance, DITA-OT PDF HTML \npublishing, Strapi Docusaurus Netlify, knowledge graphs, RAG pipeline, LLM ingestion, AI-ready \ndocumentation, structured content, document migration, technical documentation platform, \ncontent publishing automation \n \nH1 (Hero) - From Unstructured to Unstoppable - \nMake Your Content AI-Ready",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1 (Hero) - From Unstructured to Unstoppable - \nMake Your Content AI-Ready \nHero paragraph (below H1) \nRevolutionize how you convert and publish documentation. metR transforms mixed formats into \nclean DITA-XML, streamlines governance without deep Git expertise, and delivers \nbrand-perfect PDF/HTML, while preparing ontology-ready content for LLM/RAG. \nPrimary CTA (Book a demo) \n \nH2: TRUSTED BY GLOBAL BUSINESSES",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Primary CTA (Book a demo) \n \nH2: TRUSTED BY GLOBAL BUSINESSES \nAcross MedTech, Automotive, BFSI/FinTech, Manufacturing, and Software, teams rely on \nmetR for accuracy, auditability, and speed in content conversion and publishing.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Content Transformation with 90%+ Accuracy & Significant \nTime Savings \nMove confidently from DOCX, HTML, Markdown, JSON, PDF, FrameMaker, DocBook, \nArbortext XML, Flat Folio, and RDF into standards-compliant DITA-XML. Keep versions \nwatertight with guided governance, validate precise diffs across headings, paragraphs, lists, \nand tables, and ship consistent PDF/HTML via DITA-OT. Your output is ontology-ready for",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "and tables, and ship consistent PDF/HTML via DITA-OT. Your output is ontology-ready for \ndownstream RAG and model training, reducing rework and accelerating releases. \n● 90%+ conversion fidelity with style and cross-reference preservation \n● Git-light workflows to branch → compare → review → approve (WYSIWYG UI) \n● Audit-ready difference validation at the block level (H1/H2/H3, para, lists, tables) \n● One-click DITA-OT builds to PDF/HTML with reusable brand profiles",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● One-click DITA-OT builds to PDF/HTML with reusable brand profiles \n● Portal-ready delivery to Docusaurus or Strapi + Netlify \n● LLM-ready metadata & ontology hooks for accurate retrieval and governance \n \n \nH2: Core Features Overview \nH3: Enterprise Scalability \nScale confidently from pilot to enterprise. metR supports broad input/output coverage, \nhandles large document sets, and standardizes your pipeline, cutting manual effort and \ndeployment risk.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "deployment risk. \n● Format breadth: DOCX, HTML, Markdown, JSON, PDF, FrameMaker, DocBook, \nArbortext XML, Flat Folio, RDF \n● Cost reduction up to 70% vs. manual conversion & reformatting \n● Guided governance: PRs and approvals via a simple UI (no advanced Git skills) \n● Difference validation with granular change logs for regulated teams \n● DITA-OT automation for PDF/HTML with brand-accurate styling at scale",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● DITA-OT automation for PDF/HTML with brand-accurate styling at scale \n \nFeature set woven in: Guided Migration · Git-Light Governance · Difference Validation · \nDITA-OT Publishing · Visual Styling",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H3: AI-Based Conversion (AI-Ready Content) \nTurn structured docs into domain-aware knowledge. With ontology mapping, metR prepares \nDITA-XML for knowledge graphs that power RAG and custom model training—improving \nprecision, explainability, and compliance. \n● Ontology-aligned content for medical, automotive, BFSI, manufacturing, and software \ndomains \n● Traceable knowledge graphs for safer, explainable answers \n● RAG-ready structure for high-fidelity retrieval and fewer hallucinations",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● RAG-ready structure for high-fidelity retrieval and fewer hallucinations \n● Faster launches, lower rework, measurable compliance gains \n● Works seamlessly with your CI/CD and existing editorial controls \n \nCTA: Ready to see your documentation converted, governed, and published, all in one \nflow?  \nBook a demo | Talk to an expert (link to contact us form) \n \nH2: Metadata Enrichment \nTurn every page into structured, discoverable knowledge. metR enriches converted DITA-XML",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Turn every page into structured, discoverable knowledge. metR enriches converted DITA-XML \nwith precise metadata and semantic relationships, making your content easier to search, \nreuse, govern, and prepare for LLM/RAG workflows. \nAutomatically apply controlled vocabularies, taxonomy tags, and attributes (product, \naudience, platform, lifecycle state). Create cross-topic relationships and context links that boost",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "findability, reuse, and explainability, and lay the groundwork for knowledge graphs and \nanalytics. \n● Auto-tagging for topics, entities, products, and components \n● Attribute injection (audience/platform/product/version) with guardrails \n● Relationship mapping for better navigation and reuse \n● Consistent IDs, xrefs, and keys for robust linking and traceability \n● Export-ready structure for RAG pipelines and knowledge graphs \nH2: Instant Content Delivery",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Export-ready structure for RAG pipelines and knowledge graphs \nH2: Instant Content Delivery \nPublish as fast as your product ships. metR converts outputs into brand-perfect PDF/HTML \nand pushes them to your documents portal or headless CMS, with preview builds, rollbacks, \nand global CDN delivery.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "From one-click DITA-OT builds to automated deployments on Docusaurus or Strapi + \nNetlify, metR shortens the path from “merged” to “live.” Pre-flight checks prevent broken links \nand missing assets, while CI/CD hooks ensure documents stay in sync with releases. \n● Push-button PDF/HTML with reusable build profiles \n● Preview deploys and instant rollbacks to reduce release risk \n● Static (Docusaurus) or dynamic (Strapi) delivery on Netlify/CDN \n● Link/asset validation before every publish",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Link/asset validation before every publish \n● Multi-brand, multi-product theming at scale \n \n \nH3: Tailored Content Solutions \nYour domain, your workflows, your compliance needs, metR adapts to all three. Get \nverticalized configurations and delivery patterns that fit how your teams author, review, \ntranslate, and publish. \nWhether you’re in MedTech, Automotive, BFSI/FinTech, Manufacturing, or Software/SaaS,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Whether you’re in MedTech, Automotive, BFSI/FinTech, Manufacturing, or Software/SaaS, \nmetR aligns to your governance, localization, and audit requirements. Choose SaaS or private \ncloud, add training and enablement, and scale with confidence. \n● Discovery, assessment, and migration runbooks for quick starts \n● Domain-aware metadata models and governance templates \n● Localization-friendly workflows with consistent style and reuse \n● Secure deployment options (SaaS or private cloud)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Secure deployment options (SaaS or private cloud) \n● Enablement: author training, reviewer onboarding, and admin playbooks \n \n \nH2: Designed for Those Who Drive Content Excellence \nGive every role what it needs to move faster, with less friction and more control. metR aligns \nGTM velocity with documentation quality, enabling teams to ship products and updates with \naudit-ready content from day one. \n \nH3: Content Managers",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Own the pipeline without wrangling command lines. Approve branches, compare changes at a \nblock level, and publish to web and PDF with predictable, repeatable steps, all from a guided \nUI. Tie documentation milestones to release schedules, SLAs, and GTM dates with \nconfidence. \n● Cut cycle time between product sign-off and docs go-live. \n● Enforce governance and reuse to reduce content debt and rework. \n \nH3: Technical Writers",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Enforce governance and reuse to reduce content debt and rework. \n \nH3: Technical Writers \nSpend time authoring, not formatting. Convert mixed sources to clean DITA-XML, make quick \nfixes with a schema-aware editor, and let DITA-OT handle layouts and styles. Reuse modules \nacross channels and versions to keep pace with rapid release cadences. \n● Ship accurate docs alongside features, no last-minute scrambles. \n● Improve consistency across PDFs, portals, and localized variants.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Improve consistency across PDFs, portals, and localized variants. \n \nH3: Enterprises \nScale content operations across products, geographies, and teams. Gain role-based access, \naudit trails, and seamless integration with your DevOps/CI tools while keeping data where you \nneed it. Standardize on a vendor-neutral, DITA-first backbone that reduces lock-in and total \ncost of ownership. \n● Faster onboarding for new lines of business and regions.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "cost of ownership. \n● Faster onboarding for new lines of business and regions. \n● Compliance-ready documentation that supports sales, support, and certification cycles \n \n \nSOLUTIONS PAGE - Done \nMeta-title \nSolutions | AI-Enabled Conversion, Optimization, Delivery, and Knowledge Graphs | metR \nMeta-description \nStandardize your documentation pipeline end-to-end: high-accuracy conversion to DITA-XML,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Standardize your documentation pipeline end-to-end: high-accuracy conversion to DITA-XML, \nmetadata enrichment, Git-light governance, block-level diff validation, and DITA-OT publishing \nto PDF/HTML—finished with ontology mapping and knowledge graphs for RAG and LLMs.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "SEO Keywords \nenterprise content migration, DITA-XML conversion, AI content optimization, metadata \nenrichment, taxonomy/ontology mapping, knowledge graphs, RAG pipeline, LLM-ready \ndocumentation, DITA-OT PDF HTML publishing, Git-light documentation workflow, CCMS \nalternative, technical documentation modernization, Strapi, Docusaurus, Netlify \n \nH1: Complete Content Lifecycle Solutions That Scale \nwith Your Business",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: Complete Content Lifecycle Solutions That Scale \nwith Your Business \nConversion, Governance & Versioning, Difference Validation, Publishing, Visual Styling, \nand AI Enablement, which take you from migration to AI-powered knowledge graphs. \n \nH2: End-to-End Content Transformation Delivering Measurable \nBusiness Impact \nOur comprehensive solution suite addresses every stage of content transformation - from initial",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Our comprehensive solution suite addresses every stage of content transformation - from initial \nmigration through AI-ready output, enabling you to ship faster, improve quality, reduce costs, \nand stay compliant. metR operationalizes your content strategy with repeatable, auditable \nsteps that align documentation to product releases and AI initiatives. \nSolution Benefits \n● Integrated workflow from conversion → optimization → publication → AI",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Solution Benefits \n● Integrated workflow from conversion → optimization → publication → AI \n \n● Multi-format compatibility supporting 14+ input formats (DOCX, HTML, Markdown, \nJSON, PDF, FrameMaker, DocBook, Arbortext XML, Flat Folio, and many more) \n \n● Version control integration with Git-based management via a friendly, Git-light UI \n \n● Custom styling and theming to match brand requirements across PDF/HTML \n \n● AI-ready outputs for modern ML, RAG, and LLM applications (ontology-aware)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● AI-ready outputs for modern ML, RAG, and LLM applications (ontology-aware) \n \n● Scalable architecture designed for enterprise content volumes and governance \n \nCTA: Book a demo",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: From Migration to Measurable Value - Solutions That Scale \nStandardize your documentation pipeline with repeatable, governed steps. metR reduces \nmanual cleanup, streamlines review cycles, and accelerates publishing - delivering faster \ntime-to-value and lower cost-to-serve while preparing content for knowledge graphs and \nLLM training. \nFocus points \n● High-accuracy conversion to DITA-XML with style mapping & cross-ref handling",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Focus points \n● High-accuracy conversion to DITA-XML with style mapping & cross-ref handling \n \n● Governed collaboration with simple UI controls for branch, review, approve \n \n● Difference validation at block level (H1/H2/H3, paragraphs, lists, tables) \n \n● Brand-perfect outputs: DITA-OT → PDF/HTML (update once, publish everywhere) \n \n● Portal-ready delivery: static (Docusaurus) or dynamic (Strapi + Netlify) \n \n● AI-ready enrichment: metadata/ontology hooks for retrieval and training",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● AI-ready enrichment: metadata/ontology hooks for retrieval and training \n \nIndustry fit \n● MedTech/Healthcare: labeling, IFU, CAPA, SOPs, audit trails \n \n● Automotive/Manufacturing: service guides, parts catalogs, field manuals \n \n● BFSI/FinTech: policies, regulatory updates, risk & controls \n \n● Software/SaaS: API docs, release notes, developer portals \n \nCTA: Get a tailored roll-out plan \n \nH2: Content Migration \nFrom mixed files to clean DITA-XML or XML for fast, accurate, and AI-ready.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Transform unstructured sources into standards-compliant DITA-XML with AI-assisted parsing \nand normalization. Preserve headings, tables, lists, cross-references, and assets; validate \nschemas; and create a reliable foundation for multi-channel publishing and LLM/RAG pipelines. \nH3: What You Get? \n● Batch conversion with style mapping and high structural fidelity \n \n● Schema validation, link/xref integrity checks, image & table handling",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Schema validation, link/xref integrity checks, image & table handling \n \n● Block-level diff (H1/H2/H3, paragraphs, lists, tables) for auditability \n \n● Git-light approvals and controlled release workflows (no CLI required) \n \n● Ready-to-use DITA-OT profiles for immediate PDF/HTML builds \n \nH3: Market Differentiators \n● AI-aided normalization to cut manual cleanup and errors \n \n● Governed migration that aligns with DevOps practices without Git friction",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Governed migration that aligns with DevOps practices without Git friction \n \n● Audit-ready change logs for regulated domains \n \nH3: GTM and ROI \n● Up to 70% cost reduction versus manual migration \n \n● Faster onboarding of new products/variants and markets \n \n● Lower defect rates in published outputs \n \nCTA: Request a migration assessment \n \nH2: Content Optimization \nMake content discoverable, consistent, and machine-understandable.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Enrich XML topics with metadata, controlled vocabularies, and ontology mapping. Create \nrole-aware attributes (audience, platform, region, version) and relationships that boost \nsearch, reuse, analytics, and AI explainability, ready to flow into knowledge graphs. \nH\n \n3: What You Get? \n● Auto-tagging of entities, products, components, and procedures \n \n● Taxonomy enforcement with guardrails; duplicate/redundancy checks \n \n● Relationship mapping (topic-to-topic, variant-to-version)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Relationship mapping (topic-to-topic, variant-to-version) \n \n● Consistent IDs/keys for robust linking and reuse \n \n● Content health metrics for continuous improvement \n \nH3: Market Differentiators \n● Ontology-ready structure for direct graph export \n \n● Built-in governance for localization and compliance at scale \n \n● Seamless handoff to delivery and AI enablement stages \n \nH3: GTM and ROI \n● Higher reuse → fewer artifacts to maintain across variants",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H3: GTM and ROI \n● Higher reuse → fewer artifacts to maintain across variants \n \n● Faster findability for writers, support, and developers \n \n● LLM-readiness → better retrieval accuracy, fewer hallucinations \n \nCTA: See metadata enrichment in action \n \nH2: Content Delivery \nContinuous delivery of brand-perfect PDF/HTML - static or dynamic.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Automate publishing with pre-flight checks, preview builds, and instant rollbacks. Deploy to \nDocusaurus or Strapi + Netlify on a global CDN, keep docs in lockstep with releases, and \nmanage multi-brand, multi-product theming at scale. \nH3: What You Get? \n● One-click PDF/HTML with reusable themes and build profiles \n \n● Link/asset validation, schema checks, and release notes \n \n● CI/CD hooks for preview deploys and safe rollbacks \n \n● Access controls and traceable approvals for compliance",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Access controls and traceable approvals for compliance \n \nH3: Market Differentiators \n● Git-light release approvals for non-technical stakeholders \n \n● Unified pipeline from conversion → optimization → delivery \n \n● Production-grade performance with CDN acceleration \n \nH3: GTM and ROI \n● Shorter code-to-content lead times for launches \n \n● Consistency across portals, PDFs, and localized variants \n \n● Fewer publishing incidents; faster recovery \n \nCTA: Explore delivery pipelines",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Fewer publishing incidents; faster recovery \n \nCTA: Explore delivery pipelines \n \nH2: AI Enablement \nFrom structured docs to knowledge graphs for RAG & LLMs. \nConnect optimized XML content to domain ontologies and export knowledge graphs that \npower accurate retrieval and traceable answers. Plug into your RAG stack, or train/fine-tune \nmodels with clean, contextual data, governed with provenance and policy controls.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H3: What You Get? \n● Ontology mapping for medical, automotive, BFSI, manufacturing, and SaaS \n \n● Entity linking, provenance, and citation capture \n \n● Graph APIs/exports for RAG and model training \n \n● Security, access, and data residency policies \n \n● Retrieval and answer-quality metrics \n \nH3: Market Differentiators \n● Model-agnostic: works with your preferred RAG/LLM stack \n \n● Explainability: evidence-linked responses build trust and pass audits",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Explainability: evidence-linked responses build trust and pass audits \n \n● Lower TCO via higher signal-to-noise in training data \n \nH3: GTM & ROI \n● Faster rollout of AI chat, assist, and search features \n \n● Higher self-service deflection and reduced time-to-answer \n \n● Compliance-friendly AI, aligned to governance standards \n \nCTA: Talk to us about knowledge graphs \nReady to convert documents into operational knowledge and launch AI experiences your \nteams can trust? \nBook a demo",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "teams can trust? \nBook a demo \n \nH2: Integration \nBuilt to Fit - Integrate, Automate, Fewer Errors, Faster Releases",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "metR connects the tools you already trust. Teams receive governed workflows from source to \nsite, while stakeholders preview and approve without requiring deep Git knowledge, allowing \ndocuments to move at the speed of the product. \n● Git providers (GitHub/GitLab/Bitbucket): PR reviews & approvals through a friendly UI \n \n● Strapi + Docusaurus + Netlify: static or dynamic delivery with global CDN \npreviews/rollbacks \n \n● Hooks for CI/CD, webhooks, and deployment automation",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "previews/rollbacks \n \n● Hooks for CI/CD, webhooks, and deployment automation \n \nCTA: View integration options | Book a demo \n \nMetR-AI Page - Done \nMeta-title \nOntology-Driven Ingestion, Semantic Search and Knowledge Graphs for LLMs | MetR-AI \nMeta-description \nMetR-AI converts structured documentation into domain-aware knowledge graphs, enabling \nontology-guided semantic search, explainable answers, and model-agnostic RAG/LLM",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "ontology-guided semantic search, explainable answers, and model-agnostic RAG/LLM \npipelines. Works with DITA-XML and various XML schemas, without requiring a rip-and-replace \napproach. \nSEO Keywords \nLLM ingestion pipeline, ontology mapping, enterprise knowledge graph, semantic search for \nXML, RAG with DITA, explainable AI for documentation, RDF SKOS OWL, SPARQL XSPARQL, \nXML schema agnostic ingestion, DITA-XML AI, domain ontology alignment, AI-ready",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "XML schema agnostic ingestion, DITA-XML AI, domain ontology alignment, AI-ready \ndocumentation, metadata enrichment, knowledge graph search, enterprise technical content AI",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: AI-Powered Semantic Search for Enterprise XML \nContent \nTransform static XML into intelligent, explainable knowledge with ontology-driven semantic \nretrieval and graph-native enrichment, built for regulated, content-heavy enterprises. \nRequest a Demo \n \nH2: What metR-AI Does? \nMetR-AI converts your structured content (in XML formats) into domain-aware knowledge \ngraphs and exposes them through ontology-guided semantic search.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "graphs and exposes them through ontology-guided semantic search. \nThe result: accurate retrieval, explainable answers, and model-agnostic integration with your \nRAG/LLM stack, without forcing teams to change their existing authoring tools or publishing \npipelines. \n● Ontology alignment (medical, automotive, BFSI, manufacturing, software) \n \n● RDF knowledge graphs with provenance and relationship context \n \n● Explainable responses with citations and traceable evidence",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Explainable responses with citations and traceable evidence \n \n● Model-agnostic connectors for RAG and LLM fine-tuning \n \n● Works with your CI/CD and governance requirements \n \n \nH3: RDF Knowledge Graphs - From documents to a living network of facts \nConvert structured docs into RDF graphs enriched with SKOS/OWL concepts, typed \nrelationships, and provenance. Your procedures, components, hazards, and constraints become \nqueryable, reusable knowledge, ready for analytics, search, and AI.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "queryable, reusable knowledge, ready for analytics, search, and AI. \n● Domain ontologies baked into RDF/Turtle with SKOS/OWL concepts \n \n● Entity and relationship extraction from DITA topics and maps",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Provenance tracking (source topic, version, timestamp) for audit \n \n● Graph APIs/exports for downstream apps and data platforms \n \nCTA: See a sample knowledge graph \n \nH3: Ontology-Guided Search - Ask in your language, answer in your \ndomain \nGo beyond keyword search. MetR-AI leverages domain ontologies to interpret user intent, \nnormalize synonyms and acronyms, and pivot across relationships (e.g., product → version \n→ procedure). Responses are context-aware and precision-focused.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "→ procedure). Responses are context-aware and precision-focused. \n● Concept and synonym normalization via controlled vocabularies \n \n● Semantic expansion across related parts, steps, warnings, and variants \n \n● Ranking that prioritizes safety, version, audience, and region attributes \n \n● Grounded results tied back to exact topics, paragraphs, and tables \n \nCTA: Try ontology-guided search \n \nH3: Explainable AI - Answers you can trust (and prove)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "CTA: Try ontology-guided search \n \nH3: Explainable AI - Answers you can trust (and prove) \nEvery response includes citations and why-this-answer context: source topics, versioned \nIDs/keys, and evidence passages. This powers audits, safety reviews, and compliance while \nreducing hallucinations in RAG/LLM experiences. \n● Evidence-linked answers with inline citations \n \n● Confidence and coverage signals for reviewers and QA \n \n● PII/compliance filters and policy-aware retrieval",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● PII/compliance filters and policy-aware retrieval \n \n● Human-in-the-loop feedback to reinforce accuracy over time \n \nCTA: See explainability in action",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H3: Domain-Agnostic Architecture - Built for your industry, ready for the \nnext \nWhether it’s MedTech, Automotive, BFSI, Manufacturing, or Software, MetR-AI adapts to \nyour terminologies, regulations, and publishing cadence. Start with reference models; then \nextend them with your house's ontology and governance. \n● Starter vocabularies and patterns for key industries \n \n● Pluggable house ontologies and controlled vocabularies",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Pluggable house ontologies and controlled vocabularies \n \n● Localization-aware attributes (audience, platform, region, version) \n \n● Secure deployment models: SaaS or private cloud \n \nCTA: Discuss your domain model \n \nH3: XML Schema-Agnostic Ingestion - DITA, DocBook, JATS, S1000D & \nbeyond \nKeep your authoring toolchain. MetR-AI ingests XML schemas (DITA-XML, DocBook, JATS, \nS1000D, and custom XML) as well as JSON-LD/RDF, mapping structures to ontologies without",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "S1000D, and custom XML) as well as JSON-LD/RDF, mapping structures to ontologies without \nrequiring brittle, one-off migrations. \n● Schema-agnostic pipelines with validation and error reporting \n \n● Attribute mapping (audience/platform/version/region) with guardrails \n \n● Cross-reference preservation (keys, xrefs, tables, media) \n \n● Works with existing XML plugins and portal publishing flows \n \nCTA: Review ingestion options",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H3: XSPARQL + Natural Language Interface - Natural questions, precise \ngraph queries \nUsers ask in plain language; MetR-AI compiles intent into SPARQL/XSPARQL to bridge XML \nand RDF sources. The system returns grounded results, complete with citations and structure, \nso both humans and machines can act confidently. \n● NL → (X)SPARQL compilation with ontology hints \n \n● XML↔RDF interoperability for hybrid content stores \n \n● Query templates for common support/field/service scenarios",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Query templates for common support/field/service scenarios \n \n● Result rationales (what was matched, why it ranked) \n \nCTA: See NL → SPARQL mapping \n \nH2: Solutions • ROI • Benefits \nBy mapping your structured documents to domain ontologies, MetR-AI builds graph-native \nknowledge that boosts retrieval accuracy, explainability, and governance, cutting \nhallucinations and optimizing model spend while integrating into your CI/CD.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "hallucinations and optimizing model spend while integrating into your CI/CD. \n● Ontology alignment for medical, automotive, BFSI, manufacturing, and more \n \n● Evidence-linked answers for auditability and trust \n \n● Plug-and-play with RAG stacks and custom model training \n \n● Lower TCO via higher signal-to-noise in training data \n \n● Operates alongside your CI/CD and content governance controls \n \nSecondary CTA: Book a demo  \n \nReady to turn content into operational knowledge your AI can trust?",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Secondary CTA: Book a demo  \n \nReady to turn content into operational knowledge your AI can trust? \nTalk to an Expert.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Pricing Page - Done \nMeta-title \nPlans for AI-Ready Content Conversion, Publishing & Knowledge Graphs | metR \nMeta-description \nSelect a plan that aligns with your stage, from initial content conversions to enterprise-scale, \nAI-enabled content operations. All plans include Git-light governance, difference validation, \nPDF/HTML, and ontology-ready outputs for RAG/LLMs. \nSEO Keywords \ncontent migration plans, documentation platform pricing, AI documentation, knowledge graph",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "content migration plans, documentation platform pricing, AI documentation, knowledge graph \npricing, Git workflow for docs, enterprise technical documentation, RAG LLM content \nenablement \n \nH1: Build Your Pricing Plan \nDeliver the content experience your customers deserve, and empower your teams with a \nfaster path from conversion to AI-ready knowledge. \nHero CTA - Contact Us \nTalk to us to explore the right plan for your business and see how metR streamlines content",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Talk to us to explore the right plan for your business and see how metR streamlines content \ntransformation, from migration to governed publishing to knowledge graphs. \n \nH2: All plans include \n● High-accuracy conversion to XML ( from input sources such as DOCX, HTML, \nMarkdown, PDF, FrameMaker, DocBook, Arbortext XML, JSON, Flat Folio, and more) \n \n● Git-light governance: branch → compare → review → approve (no deep Git skills)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Git-light governance: branch → compare → review → approve (no deep Git skills) \n \n● Difference validation at block level (H1/H2/H3, paragraphs, lists, tables) \n \n● Publishing to brand-perfect PDF/HTML with reusable profiles \n \n● Portal-ready delivery to Docusaurus or Strapi + Netlify (preview deploys, rollbacks)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● AI-ready outputs with metadata & ontology hooks for RAG/LLM enablement \n \n \nCard 1: Starter Plan  \nFor small teams starting their structured content journey \nMove off scattered, unstructured files and prove ROI fast. Starter reduces manual cleanup, \nintroduces governed workflows, and lays a reusable content foundation without heavy \nplatform investments. \nWho it’s for \nTeams working primarily in DOCX/PDF/HTML who need version control, basic styling, and a \nclear path to AI-ready content.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "clear path to AI-ready content. \nWhat’s included \n● 3,000-page processing credit \n \n● One-time content modeling service (starter XML structure) \n \n● Git-light reviews & block-level diff validation \n \n● Standard XML Schema with PDF/HTML build profiles \n \nROI outcomes \n● Cut manual migration effort by up to 60% \n \n● Ship the first governed, consistent docs site weeks sooner \n \n● Establish a reuse-friendly structure that lowers future costs \n \nCTA: Get Started \n \nCard 2: Teams Plan",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "For growing teams ready to scale with DITA \nScale production without jumping straight to a full CCMS. Teams adds throughput, styling, \nintegrations, and support so you can publish faster across products, brands, and regions. \nWho it’s for \nOrganizations piloting or adopting DITA or other XML-based content who want cloud-ready \npublishing and stronger governance, without the complexity of CCMS. \nWhat’s included \n● 7,000-page processing credit \n \n● One-time content modeling service (advanced)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● 7,000-page processing credit \n \n● One-time content modeling service (advanced) \n \n● One-time output design for PDF/HTML or a branded web portal \n \n● Dedicated instance of metR with custom integration support \n \n● Priority customer support \n \nROI outcomes \n● Reduce time-to-publish by 40–60% across releases \n \n● Increase content reuse by 30–50% (fewer pages to maintain) \n \n● Launch a branded docs experience without custom dev or CCMS lock-in \n \nCTA: Talk to Sales \n \nCard 3: Enterprise Plan",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "CTA: Talk to Sales \n \nCard 3: Enterprise Plan  \nFor enterprises running complex, AI-enabled content \noperations \nStandardize global content ops with governance, scale, and AI enablement. Enterprise \nsupports conditional tagging, multi-brand outputs, and knowledge-graph/RAG pipelines \nbacked by audit trails.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Who it’s for \nLarge technical publication teams already using XML + Git who need multi-team \ncollaboration, white-label outputs, and AI-driven discovery. \nWhat’s included \n● Support for 10,000+ pages of technical documentation \n \n● Multi-team collaboration and governed releases \n \n● Custom XML plugins for white-labeled outputs \n \n● Tools to build/train custom LLMs on your structured XML content \n \n● Enterprise-level AI integration and metadata modeling",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Enterprise-level AI integration and metadata modeling \n \n● Semantic search & advanced retrieval (knowledge graphs, RAG) \n \nEnterprise options (add-ons) \n● SSO/SCIM, advanced audit & compliance reports \n \n● Private cloud/VPC deployment and data residency controls \n \n● Dedicated success team & custom SLAs \n \nROI outcomes \n● Shorten global release cycles by 20–40% \n \n● Improve findability and self-service deflection with explainable AI",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Improve findability and self-service deflection with explainable AI \n \n● Lower TCO via reuse, automation, and graph-ready content \n \nCTA: Request an Enterprise Consultation \n \nH2: Not sure where to start? \nWe’ll assess your current formats, volumes, and release cadence and propose a low-risk pilot \nwith clear success metrics.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Strategic Consulting \nhttps://metapercept.com/solutions/consulting/ \n \nMeta-Title \nTechnical Communication & Content Consulting | Metapercept \nMeta-Description \nDrive digital transformation and content excellence with expert consulting in technical \nwriting, CCMS, content strategy, and information architecture, trusted by global \nenterprises for scalable, compliant solutions. \nSEO Keywords \n● technical communication consulting \n● technical writing services \n● CCMS consulting and integration",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● technical writing services \n● CCMS consulting and integration \n● enterprise content strategy \n● information architecture consulting \n● DITA-XML expertise \n● modular content management \n● regulatory compliance content \n● documentation process optimization \n● content migration consulting \n● structured content management \n● user-centric content strategy \n● content reuse optimization \nH1: Unlock Business Value with Expert Technical \nDocumentation & Content Strategy Consulting",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: Unlock Business Value with Expert Technical \nDocumentation & Content Strategy Consulting \nEmpowering enterprises to optimize their technical communication, streamline digital \ncontent operations, and modernize information architecture. Backed by extensive \nindustry experience and domain expertise, our tailored consulting solutions help you \nachieve clarity, regulatory compliance, and measurable ROI on your enterprise content \ninvestments.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Strategic Consulting and Core Solutions to Accelerate Your \nSuccess \n● Technical Writing Consulting \n● CCMS Strategy and Integration \n● Enterprise Content Strategy \n● Information Architecture Design \n● Custom Engineering and Software Development \nH2: Why Choose Metapercept Over Competitors? \nIn a market dominated by expensive services and consulting companies, Metapercept \ndifferentiates itself through its seamless blend of international standards and localized",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "differentiates itself through its seamless blend of international standards and localized \ninsights. Our customer-centric approach delivers end-to-end consulting, from \nstakeholder analysis to final deployment, ensuring faster time-to-value and ongoing \nadaptability. \n● Global Expertise - Specialized in DITA XML and open content standards, \nguaranteeing interoperability and compliance. \n● Enterprise-readiness - Tailored frameworks for large-scale, regulated",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Enterprise-readiness - Tailored frameworks for large-scale, regulated \nenvironments that demand precision and scalability. \n● Agile Engagements - Flexible delivery with rapid implementation, customized \nanalytics, and continuous improvement support. \nH2: Tangible Benefits Delivered \n● Streamlined Content Operations \n● Robust Governance and Compliance \n● Enhance User Experience \n● Technology Empowerment \nH2: Metapercept: Your Partner for Content Transformation",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Technology Empowerment \nH2: Metapercept: Your Partner for Content Transformation \nJoin a wide range of Fortune 500 companies, mid-sized manufacturers, and innovative \nstartups elevating their content ecosystems with Metapercept’s collaborative consulting \nmodel. Together, we drive continuous improvement and sustained business impact. \nContact us to schedule a consultation and unlock the full potential of your technical \ncommunication ecosystem.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Meta-Title \nFlexible Staff Augmentation Solutions for IT Projects | Metapercept \nStaff Augmentation SEO Keywords \n● staff augmentation \n● IT staff augmentation \n● staff augmentation services \n● staff augmentation company \n● IT staffing solutions \n● flexible IT staffing \n● remote IT staff augmentation \n● on-demand IT talent \n● software developer augmentation \n● DevOps staff augmentation \n● UI/UX staffing \n● project-based IT staffing \n● technical writer staffing \n● staff augmentation consulting",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● project-based IT staffing \n● technical writer staffing \n● staff augmentation consulting \n● augment software development team \n \nMeta-Description \nAccelerate your business’s success with Metapercept’s staff augmentation services: \nonboard top IT talent, scale teams efficiently, and boost project delivery with seamless \nintegration. \nH1: Scale Your Team Instantly with Expert Staff \nAugmentation Services \nWe empower organizations to enhance capabilities, fill talent gaps, and maintain direct",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "We empower organizations to enhance capabilities, fill talent gaps, and maintain direct \noversight over projects without lengthy hiring processes. \nH2: Metapercept’s Staff Augmentation Approach \nOur Staff Augmentation Consulting puts high-caliber IT experts at your finger tips, ready \nto integrate with your in-house team at any project phase.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Services Offered \n● Access specialized IT talent on demand: software developers, technical writers, \nDevOps engineers, UI/UX engineers, and integration engineers. \n● Rapid team scaling for project surges or strategic resource expansion. \n● Immediate placement for urgent projects or skills gaps. \n● Flexible contracts, from part-time to full-time assignments. \n● Hassle-free onboarding and team integration. \nH2: Key Advantages of Metapercept Staff Augmentation",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Key Advantages of Metapercept Staff Augmentation \n● Flexibility: Scale your workforce up or down based on evolving project demands \nand timelines. \n● Cost-effectiveness: Avoid lengthy, expensive recruitment; pay only for the talent \nyou need when you need it. \n● Speed: Quickly address skill gaps or urgent deadlines with vetted professionals. \n● Global talent access: Choose from a wide pool of experts without geographic \nrestrictions.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Global talent access: Choose from a wide pool of experts without geographic \nrestrictions. \n● Direct team management: Maintain control and communication with augmented \nstaff for seamless alignment with your processes. \n● Optimized delivery: Meet tight deadlines, accelerate project execution, and boost \noverall productivity. \nH2: Our Staff Augmentation Process \n● Analyze your project’s talent requirements and recommend the right experts.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Analyze your project’s talent requirements and recommend the right experts. \n● Effortless onboarding and integration with existing teams. \n● Ongoing management and support for successful project outcomes. \n● Contract flexibility for short-term or long-term engagements. \n \nContact us today to understand how we can help you with your staffing needs. \n \nStructured Authoring - Done \nhttps://metapercept.com/services/technicalwriting/structured-authoring/",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "https://metapercept.com/services/technicalwriting/structured-authoring/ \n \nMeta Title: Structured Authoring Services - DITA-XML & DocBook Implementation | \nMetapercept",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Meta Description: Transform content strategy with Metapercept's DITA-XML and \nDocBook-based structured authoring for consistent, reusable, and compliant documentation. \nSEO Keywords: structured authoring, DITA-XML implementation, DocBook authoring, modular \ncontent model, content reusability, multi-channel publishing, compliance documentation, \ntechnical writing standards, content consistency, structured content creation \n \nH1: Structured Authoring for Content Reuse and \nEnterprise Efficiency",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: Structured Authoring for Content Reuse and \nEnterprise Efficiency \nH2: Standardize content creation with DITA-XML and DocBook for \nscalable, compliant, and future-ready publishing. \nUnlock efficiency and compliance with Metapercept’s Structured Authoring Services. \nWe help enterprises adopt DITA-XML, DocBook, and structured content frameworks to \neliminate duplication, maximize reuse, and deliver consistent documentation across web,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "eliminate duplication, maximize reuse, and deliver consistent documentation across web, \nmobile, print, and APIs. Our “write once, publish everywhere” approach accelerates \npublishing cycles by up to 70%, cuts costs by 30 to 40%, and ensures compliance with global \nstandards. From content migration and modular authoring to metadata-driven governance \nand automation, we build scalable, AI-ready ecosystems that future-proof enterprise \ndocumentation. \nH2: Why Choose Metapercept",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "documentation. \nH2: Why Choose Metapercept \n Enterprise-grade standards - DITA-XML, DocBook, and domain-specific schemas. \n Measurable ROI - 30 to 40% cost savings, 50–70% faster publishing cycles. \n Future-ready frameworks - AI-enabled search, semantic enrichment, and metadata \ngovernance. \n Cross-industry expertise - Proven success in SaaS, High-end Computing, Advanced \nTechnology, Semiconductors, MedTech, BFSI, and manufacturing.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Technology, Semiconductors, MedTech, BFSI, and manufacturing. \n Scalable ecosystems - Built for global teams and multi-channel delivery. \nH2: Key Benefits \n● Maximize reuse with modular, structured content. \n \n● Guarantee compliance and style consistency across channels.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Shorten cycles with automation-driven authoring workflows. \n \n● Deliver multi-channel outputs (web, mobile, PDF, APIs) with ease. \n \n● Build a scalable, AI-ready content ecosystem for long-term growth. \n \n \nH2: Implementation Methodology \nOur proven four-phase structured authoring methodology ensures seamless adoption: \n \nPhase 1: Assessment & Planning - Content audit, gap analysis, and business alignment.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Phase 1: Assessment & Planning - Content audit, gap analysis, and business alignment. \nPhase 2: Architecture & Design - Metadata models, information architecture, and governance \nframeworks. \nPhase 3: Migration & Implementation - Converting legacy docs to DITA-XML / DocBook, \ntoolchain setup. \nPhase 4: Optimization & Support - Continuous improvement, automation, and performance \nmonitoring. \n \nMetapercept enables enterprises to standardize content creation, maximize reuse, and",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Metapercept enables enterprises to standardize content creation, maximize reuse, and \nfuture-proof documentation systems, driving efficiency, compliance, and growth. \n \nH3: Standardize content creation. Maximize reuse. Scale with confidence. \nContact us today",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: Custom Software Engineering for Enterprise \nContent Ecosystems \nH2: Adaptive, Strapi-powered CMS solutions built for scalability, \nautomation, and AI readiness. \nMeta Title (58 characters): \nCustom Software Engineering Services | Metapercept \nMeta Description (159 characters): \nBuild bespoke CMS applications with Strapi framework expertise. From utilities to dashboards \nand integrations, we deliver scalable, secure solutions for your technical communication. \nKeywords:",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Keywords: \n● Custom software engineering for content systems \n● Strapi CMS development \n● Bespoke application development \n● Enterprise content utilities and dashboards \n● Workflow automation solutions \n● API integration and enterprise connectivity \n● Secure and scalable architectures \n● Headless CMS and CCMS integrations \n● Content delivery and reporting dashboards \n● AI-enabled workflow optimization \n● Enterprise-grade software development",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● AI-enabled workflow optimization \n● Enterprise-grade software development \n \nWe deliver tailor-made CMS applications engineered on Strapi to transform how enterprises \nmanage, deliver, and optimize content. Our expertise spans content management utilities, \nworkflow automation, reporting dashboards, and enterprise system integrations, ensuring \nyour technical content systems are not just functional, but adaptive to your business model \nand growth strategy.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "and growth strategy. \nUnlike off-the-shelf CMS tools, we design domain-specific, scalable architectures that embed \nautomation, intelligent workflows, and secure API-driven integrations. From headless CMS \nadoption to AI-enabled content operations, our solutions reduce manual effort, improve \naccuracy, and ensure your ecosystem is future-ready.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Why Metapercept is Different \n Bespoke CMS Applications - Built for structured content workflows, not generic \npublishing. \n Automated Pipelines - Speed up content delivery with governance-driven automation. \n Seamless Integrations - ERP, CRM, CCMS, and enterprise-grade API connectivity. \n Secure & Scalable - Strapi-powered frameworks designed for long-term digital growth. \n AI-Ready Engineering - Workflows optimized for discoverability, compliance, and \nsemantic enrichment.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "semantic enrichment. \nH2: Key Business Impact \n● 50 to 70% faster publishing cycles with automation-first workflows. \n \n● Improved compliance and governance through structured content pipelines. \n \n● Scalable architectures supporting global teams and multilingual delivery. \n \n● Future-proof systems aligned with AI and headless CMS innovation. \n \nMetapercept builds CMS solutions around your processes, and not the \nother way around. \n \n \nH1: Governance-Driven Managed Content Services",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "other way around. \n \n \nH1: Governance-Driven Managed Content Services \nfor Enterprise Scale \nH2: Metapercept: Your Content Operations Partner to Simplify, \nScale, and Govern Your Technical Publication Ecosystem \nMeta Title (56 characters): \nManaged Content Services | Governance-Driven Support \nMeta Description (158 characters): \nOutsource your content lifecycle with our managed content services. Ensure compliance, \nconsistency, and scalability while freeing teams to focus on innovation.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Keywords: \n● Managed content services \n● Governance-driven documentation management \n● Outsourced content lifecycle management \n● Enterprise content operations \n● Technical documentation governance \n● Content quality assurance and compliance \n● Scalable content lifecycle support \n● Content governance frameworks \n● Analytics-driven content optimization \n \nEnterprises managing large volumes of technical documentation often face challenges with",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Enterprises managing large volumes of technical documentation often face challenges with \ncontent duplication, fragmented workflows, and compliance risks. Metapercept delivers \nManaged Content Services purpose-built for DocsOps, ContentOps, and technical \npublication workflows. Acting as an extension of your team, our experts manage the entire \ncontent lifecycle—from authoring and updates to governance, versioning, and analytics-driven \noptimization. \nH2: What We Offer",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "optimization. \nH2: What We Offer \n● DocsOps Services - Streamline authoring, reviews, and publishing through automated \nworkflows. \n \n● ContentOps Services - Metadata-driven reuse, version control, and multi-channel \npublishing at scale. \n \n● Technical Publications - Enterprise-grade quality checks, compliance documentation, \nand localization support. \n \n● Content Governance - Frameworks ensuring consistency, regulatory compliance, and \naudit readiness.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "audit readiness. \n \n● Analytics-Driven Optimization - Insights that reduce costs, improve efficiency, and \nenhance usability. \n \nH2: Why Enterprises Choose Metapercept \n Scalable Content Operations that adapt to global teams and \nmulti-language needs.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Reduced operational strain with 30 to 40% efficiency gains from proactive \ngovernance. \n Enterprise-grade compliance for regulated industries (MedTech, \nSemiconductors, BFSI, Automotive). \n Future-ready ecosystems aligned with AI, semantic search, and reusable \narchitectures. \nWe help enterprises transform documentation into a compliant, scalable, and \nAI-ready content ecosystem, powered by DocsOps, ContentOps, and Managed \nTechnical Publication Services.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Technical Publication Services. \n \nH1: Expert-Led DITA Implementation and Consulting \nH2: Accelerate Enterprise DITA Adoption with Future-Ready, \nAI-Enhanced Information Architecture \nMeta Title (59 characters): \n| Metapercept \nMeta Description (156 characters): \nStreamline DITA adoption with expert consulting. From tool selection to CCMS integration, we \ndeliver scalable, reusable, and AI-ready content ecosystems. \nKeywords:",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "deliver scalable, reusable, and AI-ready content ecosystems. \nKeywords: \nDITA implementation services, DITA-XML adoption consulting, CCMS integration with DITA, \nstructured authoring and information architecture, metadata frameworks for scalability, modular \ncontent modeling, multi-channel publishing with DITA, DITA migration and consulting, enterprise \nDITA adoption strategy, DITA tool selection and configuration",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "DITA adoption strategy, DITA tool selection and configuration \n \nImplement DITA-XML in your technical publication system with confidence. At Metapercept, we \nhelp enterprises move beyond fragmented technical documentation processes and legacy \npublishing systems by designing future-ready, AI-enhanced content ecosystems. With 15+ \nyears of structured authoring expertise and a proven record in the APAC, EU, and the USA",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "years of structured authoring expertise and a proven record in the APAC, EU, and the USA \nregion, we deliver DITA implementation strategies that cut techpub costs by up to 40%, \naccelerate time-to-market, and improve compliance outcomes.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Why Enterprises Choose Metapercept for DITA Implementation \n● AI-Native Documentation Frameworks - First in the region to embed machine learning \nand automation into DITA workflows, reducing manual effort by 50–70%. \n \n● Transparent ROI & Pricing - Unlike premium boutiques, we provide upfront ROI \nprojections and transparent pricing, ensuring faster decision-making. \n \n● Boutique Expertise at Enterprise Scale - Senior consultants lead every project,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Boutique Expertise at Enterprise Scale - Senior consultants lead every project, \nsupported by scalable delivery teams for global rollouts. \n \n● Industry Specialization - Expertise in healthcare, aerospace, manufacturing, and \nfinancial services ensures compliance-ready documentation. \n \n \nMetapercept’s Approach to DITA Adoption \n● Tailored DITA Adoption Strategy - Tool selection, migration roadmap, and business \ncase alignment.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "case alignment. \n \n● Information Architecture Design - Structured, modular content models with metadata \nframeworks for scalability and reuse. \n \n● Seamless CCMS Integration - Vendor-neutral expertise for deploying and customizing \nCCMS platforms. \n \n● Structured Authoring & Training - Enable in-house teams with best practices, \ngovernance models, and future-proof skills. \n \n● Multi-Channel Publishing Pipelines - Automated publishing for print, HTML5, mobile, \nand emerging formats like AR/VR.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "and emerging formats like AR/VR. \n \nBusiness Outcomes & Market Differentiators \n● 30 to 60% reduction in documentation costs \n \n● 40 to 70% faster content delivery cycles \n \n● 99%+ compliance audit success rate across regulated industries",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● APAC leadership: Only provider in the region delivering AI-integrated DITA ecosystems \nat scale \n \nSimplify your DITA journey with expert-led implementation. \nContact Us Today for a free assessment and ROI projection. \n \n \nH1: Revolutionize Documentation with \nDocs-as-Code and DocOps Excellence \nH2: Automate, Scale, and Future-Proof Technical \nDocumentation with a Developer-First Approach \nMeta Title (60 characters): \nDocs-as-Code and DocOps Services | CI/CD Documentation Automation",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Meta Title (60 characters): \nDocs-as-Code and DocOps Services | CI/CD Documentation Automation \nMeta Description (157 characters): \nTransform technical documentation workflows with Docs-as-Code and DocOps. Automate \nCI/CD pipelines, enhance collaboration, and deliver developer-first documentation at scale. \nSEO Keywords: \ndocs-as-code, DocOps, documentation automation, CI/CD documentation, Docusaurus \ndevelopment, GitBook implementation, static site generators, developer portal, documentation",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "development, GitBook implementation, static site generators, developer portal, documentation \nworkflow, technical documentation automation, continuous documentation delivery \n \nAt Metapercept, we bring the developer-first mindset to technical documentation. Our \nDocs-as-Code and DocOps services integrate documentation into CI/CD pipelines, enabling \nenterprises to achieve continuous documentation delivery with the same agility as software.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "enterprises to achieve continuous documentation delivery with the same agility as software. \nUnlike traditional providers, we deliver scalable, AI-ready solutions that reduce manual \nintervention by up to 70% and ensure enterprise-grade security and compliance.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Why Enterprises Choose Metapercept for Docs-as-Code and \nDocOps \n● AI-Native Documentation Automation - Embedding machine learning into quality \nchecks and publishing pipelines, reducing review cycles by 50 to 60%. \n \n● Transparent ROI and Pricing - Upfront cost projections, eliminating hidden fees that \ncompetitors often charge. \n \n● Boutique Expertise at Enterprise Scale - Senior consultants design the strategy; \nscalable teams deliver across complex product portfolios.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "scalable teams deliver across complex product portfolios. \n \n● Leaders in DocOps Implementation - Our DocOps solutions have proven success in \nGit-based workflows, static site generator deployments, and enterprise CD/CI \nintegration. \n \nH2: Metapercept’s Approach to Docs-as-Code and DocOps \n● Git-Based Version Control - Treat documentation as code with branching, merging, and \nversion history. \n \n● Continuous Integration / Continuous Deployment (CI/CD) - Automated pipelines for",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Continuous Integration / Continuous Deployment (CI/CD) - Automated pipelines for \nfaster releases and quality assurance. \n \n● Developer-First Ecosystem - Implementation of Docusaurus, GitBook, Hugo, or custom \nstatic site generators. \n \n● Real-Time Monitoring and QA - AI-driven linting, testing, and compliance checks \nintegrated into workflows. \n \n● Scalable and Secure Architecture - Cloud-ready, containerized solutions for global \ndeployment. \n \n \nH2: Business Outcomes and Differentiators",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "deployment. \n \n \nH2: Business Outcomes and Differentiators \n● 40 to 70% faster publishing cycles with automated CI/CD pipelines.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● 60% reduction in documentation errors through AI-powered validation. \n \n● Enterprise-wide collaboration across developers, writers, and product teams. \n \n● Proven APAC deployments in telecom, aerospace, and financial services sectors. \n \n● Competitive Advantage: While traditional vendors deliver siloed automation, Metapercept \nintegrates Docs-as-Code + DocOps + AI, making us the only consultancy in APAC \nproviding this end-to-end stack. \n \n \nSmarter workflows mean smarter growth.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "providing this end-to-end stack. \n \n \nSmarter workflows mean smarter growth. \nContact Us to discover how Docs-as-Code and DocOps can accelerate your documentation \nstrategy and deliver measurable ROI. \n \n \nMeta Title (58 characters) \nEnterprise Knowledge Management & Content Intelligence \nMeta Description (159 characters) \nAI-native Knowledge Management Solutions from Metapercept. Improve findability, reuse,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "AI-native Knowledge Management Solutions from Metapercept. Improve findability, reuse, \ncompliance, and productivity by transforming enterprise knowledge into measurable business \nvalue. \nKeywords \nknowledge management solutions, enterprise content intelligence, AI-powered knowledge \nsystems, content findability improvement, knowledge analytics platform, collaborative \nknowledge platforms, knowledge reuse and compliance, enterprise knowledge management \nAPAC",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "knowledge platforms, knowledge reuse and compliance, enterprise knowledge management \nAPAC\n \nH1: Enterprise Content Intelligence for Knowledge \nManagement",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H2: Turning Distributed Knowledge into a Measurable Competitive \nAdvantage \nKnowledge is more than information; it’s a business asset. Yet fragmented repositories, \nredundant content, and low findability limit ROI. At Metapercept, we position knowledge \nmanagement as a strategic differentiator, not just a support function. \nOur enterprise-ready Knowledge Management solutions can help integrate AI-powered",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Our enterprise-ready Knowledge Management solutions can help integrate AI-powered \ndiscovery, automated curation, and advanced analytics to transform organizational knowledge \ninto actionable insights. \nThe result: faster decisions, stronger compliance, and scalable content reuse across distributed \nteams and beyond. \nOur Market Differentiators \n● AI-Native Search & Discovery: Employees access relevant content 75% faster, \nreducing support queries and improving customer self-service.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "reducing support queries and improving customer self-service. \n \n● Automated Curation & Governance: Intelligent systems detect outdated assets and \ncontent gaps, ensuring knowledge stays accurate and compliant. \n \n● Advanced Knowledge Analytics: Deliver visibility into usage trends, team productivity, \nand content ROI, turning data into measurable business impact. \n \n● Collaborative Capture of Expertise: Our platforms systematize SME knowledge,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Collaborative Capture of Expertise: Our platforms systematize SME knowledge, \nreducing dependency on individual experts and scaling institutional memory. \nBusiness Impact \nOrganizations that adopt our Knowledge Management Solutions consistently achieve: \n● 30% reduction in time spent searching for information \n \n● 50% increase in content reuse \n \n● 40% boost in employee productivity \n \n● 35% stronger compliance performance",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● 40% boost in employee productivity \n \n● 35% stronger compliance performance \nThese outcomes enable large enterprises with complex product portfolios and distributed teams \nto compete with greater agility and resilience.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Unlike generic KM tools, Metapercept delivers AI-native, structured, and compliance-ready \nsolutions designed for regulated and innovation-driven industries (healthcare, aerospace, \nfinance, telecom). Our transparent pricing and hybrid consulting-delivery model provide \nenterprise-grade impact at 30-40% lower cost than traditional consultancies. \n \n Unlock the full business value of your organizational knowledge. \n Contact us for a customized ROI projection and solution roadmap.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Contact us for a customized ROI projection and solution roadmap. \n \n \nH1: Enterprise-Grade CCMS Solutions for Scalable \nContent Transformation \nH2: Reimagine Content Workflows with Metapercept \n \nMeta Title (58 characters): \nCCMS Implementation and Integration Services | Metapercept \nMeta Description (159 characters): \nImplement and integrate CCMS with Metapercept. From system selection to workflow \noptimization and translation management, we enable seamless, scalable content management.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "optimization and translation management, we enable seamless, scalable content management. \nKeywords: \nCCMS implementation services \nCCMS integration consulting \nComponent Content Management System optimization \nMulti-language publishing with CCMS \nTechnical documentation workflow automation \nCCMS for compliance and governance \nStructured authoring with CCMS",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Translation management integration with CCMS \nScalable CCMS solutions \nCCMS adoption consulting \n \n \nEnterprises managing large volumes of technical content face recurring \nchallenges—versioning chaos, content duplication, fragmented authoring, and \ncompliance risks. A Component Content Management System (CCMS) solves these by \nenabling single-sourcing, modular authoring, and metadata-driven reuse, ensuring \nconsistency and faster publishing across all channels.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "consistency and faster publishing across all channels. \nAt Metapercept, we differentiate by delivering end-to-end CCMS transformation—from \nrequirement evaluation and system selection to designing scalable information architectures, \nmetadata frameworks, and governance models. Our expertise lies not just in deployment, but in \ncreating future-ready content ecosystems that maximize reuse, compliance, and ROI. \nOur Differentiated Approach",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Our Differentiated Approach \n● Strategic System Selection - Choosing the right CCMS aligned with your enterprise \ngoals. \n \n● Seamless Integrations - Connecting CCMS with portals, CRMs, knowledge bases, and \ntranslation tools. \n \n● Intelligent Workflow Automation - Eliminating manual versioning, accelerating \nreviews, and enabling multi-channel publishing. \n \n● Global Scalability - Designing governance frameworks that support distributed teams \nand localization at scale.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "and localization at scale. \nBusiness Outcomes that Matter \n● 50% faster publishing cycles through automation and single-sourcing. \n \n● 30–40% cost savings in translation and localization. \n \n● 70% content reuse across product families and documents. \n \n● Near 100% accuracy in compliance-critical documentation.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Significant reduction in manual reviews, freeing teams to innovate. \n \nMarket Differentiators with Metapercept \n Content-Centric Engineering DNA - Deep expertise in DITA-XML, structured \nauthoring, and AI-powered content enrichment. \n Proven Cross-Industry Success - Delivered CCMS frameworks across \nsemiconductors, fintech, medtech, and manufacturing. \n Future-Ready Ecosystems - Architectures designed for AI integration, semantic \nsearch, and intent-based retrieval.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "search, and intent-based retrieval. \n ROI-First Delivery - Tangible savings in time, cost, and compliance overhead. \nBuild Your Competitive Edge \nMetapercept makes CCMS adoption seamless, scalable, and ROI-driven. Centralize content, \nreduce duplication, ensure compliance, and future-proof your documentation workflows. \n \n \nMeta Title (59 characters): \nInformation Architecture Services | Taxonomy and Metadata Design \nMeta Description (158 characters):",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Meta Description (158 characters): \nAPAC regions' best Information Architecture with Metapercept. Improve searchability, taxonomy, \nmetadata, and governance for enterprise content ecosystems. \nKeywords: \ninformation architecture services, enterprise taxonomy design, metadata modeling, content \nmodeling and structuring, CCMS information architecture, scalable content frameworks, \nAI-driven information architecture, knowledge flow optimization, semantic search enablement,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "AI-driven information architecture, knowledge flow optimization, semantic search enablement, \ncompliance-ready content ecosystems",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: Scalable Information Architecture for Enterprise \nContent \nH2: Designing taxonomies, developing metadata frameworks, and \nimplementing content models for a long-term business value. \n \nIntroduction \nWithout a clear information architecture (IA), organizations struggle to govern knowledge \neffectively, comply with regulations, and enable reuse across global teams. \nAt Metapercept, we deliver research-driven IA content frameworks that align with business goals",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "At Metapercept, we deliver research-driven IA content frameworks that align with business goals \nand user needs. From taxonomy design and metadata models to modular content structures, \nwe help enterprises build scalable, future-ready ecosystems that simplify navigation, improve \ngovernance, and enhance user experiences. \n \nH3: Key Benefits \n● Boost discoverability with intuitive taxonomies and metadata-driven navigation.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Boost discoverability with intuitive taxonomies and metadata-driven navigation. \n \n● Maximize ROI through modular content reuse, compliance, and multi-channel delivery. \n \n● Integrate seamlessly with CCMS, knowledge bases, and enterprise ecosystems. \n \n● Unlock insights using semantic search and AI-powered content discovery. \n \nROI/Impact (1 line) \nOur comprehensive IA solutions deliver measurable results, 70% faster content discovery,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Our comprehensive IA solutions deliver measurable results, 70% faster content discovery, \n60% higher reuse, and improved compliance across regulated industries. \n \n \nMeta Title \nAI-Powered Content Migration | Transform Legacy Files \nMeta Description (155–160 chars)",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Streamline large-scale content migration with AI. Convert DOC, PDF, HTML, Wikis, and legacy \nformats into structured DITA-XML or DocBook for faster publishing and higher ROI. \nKeywords: \n● AI-powered content migration \n● DITA-XML conversion services \n● Structured content transformation \n● DocBook and CCMS migration \n● Multi-channel publishing enablement \n● Content standardization and compliance \n● Legacy documentation modernization \n● Technical content migration ROI",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Legacy documentation modernization \n● Technical content migration ROI \n● AI enablement for documentation workflows \n● Enterprise-scale content transformation \n \nH1: Effortless AI-Powered Content Migration \nH2: Transform unstructured legacy files into structured, \nfuture-ready content with AI-driven accuracy and scalability. \nStruggling with unstructured content migration? Metapercept makes it effortless with AI. Our",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Struggling with unstructured content migration? Metapercept makes it effortless with AI. Our \nintelligent content migration engine converts large-scale, legacy documentation into structured \nformats such as DITA-XML, DocBook, or your preferred schema, ensuring accuracy, \nconsistency, and scalability. \nWe handle diverse formats, including Word, PDF, Wikis, FrameMaker, InDesign, HTML, \nMarkdown, and legacy publishing tools such as Interleaf and Ventura Publisher. With AI-driven",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Markdown, and legacy publishing tools such as Interleaf and Ventura Publisher. With AI-driven \nautomation, your content is seamlessly transformed into structured, compliant, and reusable \nformats. \nKey Benefits: \n● Accelerated go-to-market with structured, reusable content. \n \n● Multi-channel publishing across PDF, HTML5, portals, and CCMS with minimal rework. \n \n● Error reduction and consistency through AI-powered tagging, metadata enrichment, and \ncompliance alignment.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "compliance alignment. \n \n● Cost savings and measurable ROI by reducing manual effort and publishing faster.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Future-proof your content ecosystem today. \nContact Us to Start Your AI-Powered Content Migration \n \nMeta Title (59 characters): \nContent Enhancement and Replenishment Services | AI-Powered \nMeta Description (158 characters): \nEnrich and replenish your content with AI-powered metadata, terminology optimization, and \nproactive updates for smarter, accessible, and compliant documentation. \nKeywords: \nAI-powered content enhancement \nContent replenishment services",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Keywords: \nAI-powered content enhancement \nContent replenishment services \nMetadata tagging and semantic optimization \nTerminology alignment and consistency \nAutomated content quality checks \nKnowledge base audits and updates \nCompliance-ready documentation \nAI-generated summaries for accessibility \nIntelligent content optimization \nFuture-ready content ecosystem \nH1: AI-Powered Content Enrichment and Lifecycle \nManagement \nH2: Transform content into intelligent, future-ready assets that",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Management \nH2: Transform content into intelligent, future-ready assets that \ndrive accuracy, usability, and compliance.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "Unlock the true value of your technical content with Metapercept’s AI-powered enrichment and \nreplenishment services. We transform technical documentation into intelligent, searchable \nassets with metadata tagging, semantic alignment, and AI-driven quality checks. \nOur proactive replenishment keeps your knowledge base clean, compliant, and future-ready, \nreplacing outdated data, adding missing content, and enhancing usability. Stay accurate,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "replacing outdated data, adding missing content, and enhancing usability. Stay accurate, \nscalable, and AI-ready with content built for tomorrow. \nKey Benefits: \n● Enrich metadata, optimize terminology, and ensure semantic alignment. \n \n● Detect gaps and inconsistencies with AI-driven quality checks. \n \n● Improve accessibility with AI-generated summaries and contextual insights. \n \n● Refresh and update content proactively through audits and analytics.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Refresh and update content proactively through audits and analytics. \nFuture-proof your knowledge base with AI-powered content enhancement. Contact Us \nToday. \n \n \nMeta Title (59 characters) \nAI-Enhanced Software Engineering for Scalable Documentation \nMeta Description (156 characters) \nBoost accuracy, scalability & efficiency with AI-enhanced software engineering. Automated \ncontent, QA, and intelligent workflows for enterprises & SaaS. \nSuggested Keywords",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "content, QA, and intelligent workflows for enterprises & SaaS. \nSuggested Keywords \nAI-enhanced documentation, intelligent content architecture, automated content generation, \nAI-driven quality assurance, enterprise documentation systems, scalable documentation \nworkflows, software engineering for documentation, API-first documentation solutions",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "H1: AI-Driven Software Engineering For Technical \nDocumentation Excellence \nH2: Smarter, scalable, and cost-effective content engineering for \nenterprises. \nMetapercept empowers enterprises with AI-enhanced content development, combining \nautomated generation, intelligent architecture, and seamless testing for faster, error-free \ndocumentation. \nWe deliver measurable ROI: 50–70% faster cycles, 95% consistency, 40% higher task \nsuccess, and $200K+ annual savings.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "success, and $200K+ annual savings. \n \nOur software engineering solutions for your content challenges are meant to deliver measurable \noutcomes such as a 50–70% reduction in content development cycles, 95% consistency across \ndeliverables, a 40% improvement in user task completion rates, and $200K+ annual savings for \nenterprise implementations. We do engineering for our clients with the API-first approach,",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "enterprise implementations. We do engineering for our clients with the API-first approach, \nrequiring rapid, accurate technical documentation that scales with development velocity. \nKey Benefits: \n● Streamline creation and updates with automated content generation. \n \n● Ensure accuracy, consistency, and compliance with AI-driven quality assurance. \n \n● Enable scalability and seamless flow with intelligent content architecture. \n \n● Improve system reliability with automated testing integration.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  },
+  {
+    "pageContent": "● Improve system reliability with automated testing integration. \nBuild future-ready documentation workflows with AI-driven software engineering.",
+    "metadata": {
+      "source": "./metapercept-doc.pdf",
+      "pdf": {
+        "version": "1.10.100",
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "Title": "metapercept-doc",
+          "Producer": "Skia/PDF m141 Google Docs Renderer"
+        },
+        "metadata": null,
+        "totalPages": 43
+      }
+    }
+  }
+]

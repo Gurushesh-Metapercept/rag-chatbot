@@ -1,21 +1,54 @@
+import "dotenv/config";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-// import { OpenAIEmbeddings } from "@langchain/openai";
-// import { PineconeStore } from "@langchain/pinecone";
-// import { Pinecone as PineconeClient } from "@pinecone-database/pinecone";
+import fs from 'fs';
 
-// const embeddings = new OpenAIEmbeddings({
-//   model: "text-embedding-3-small",
-// });
+const STORAGE_FILE = './documents.json';
 
-// const pinecone = new PineconeClient();
+class SimpleVectorStore {
+  constructor() {
+    this.documents = this.loadDocuments();
+  }
 
-// const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX_NAME);
+  loadDocuments() {
+    if (fs.existsSync(STORAGE_FILE)) {
+      return JSON.parse(fs.readFileSync(STORAGE_FILE, 'utf8'));
+    }
+    return [];
+  }
 
-// export const vectorStore = await PineconeStore.fromExistingIndex(embeddings, {
-//   pineconeIndex,
-//   maxConcurrency: 5,
-// });
+  saveDocuments() {
+    fs.writeFileSync(STORAGE_FILE, JSON.stringify(this.documents, null, 2));
+  }
+
+  async addDocuments(docs) {
+    this.documents.push(...docs);
+    this.saveDocuments();
+  }
+
+  async similaritySearch(query, k = 3) {
+    return this.documents
+      .map(doc => ({
+        ...doc,
+        score: this.calculateSimilarity(query, doc.pageContent)
+      }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, k);
+  }
+
+  calculateSimilarity(query, text) {
+    const queryWords = query.toLowerCase().split(' ');
+    const textWords = text.toLowerCase().split(' ');
+    const matches = queryWords.filter(word => textWords.includes(word));
+    return matches.length / queryWords.length;
+  }
+}
+
+export const vectorStore = new SimpleVectorStore();
+
+export function hasDocuments() {
+  return vectorStore.documents.length > 0;
+}
 
 export async function indexTheDocument(filePath) {
   const loader = new PDFLoader(filePath, { splitPages: false });
@@ -27,15 +60,13 @@ export async function indexTheDocument(filePath) {
   });
 
   const texts = await textSplitter.splitText(doc[0].pageContent);
-  console.log("👉 [prepare.js:30]: texts: ", texts.length);
 
-  //   const documents = texts.map((chunk) => {
-  //     return {
-  //       pageContent: chunk,
-  //       metadata: doc[0].metadata,
-  //     };
-  //   });
+  const documents = texts.map((chunk) => {
+    return {
+      pageContent: chunk,
+      metadata: doc[0].metadata,
+    };
+  });
 
-  //   await vectorStore.addDocuments(documents);
-  // console.log(documents);
+  await vectorStore.addDocuments(documents);
 }
