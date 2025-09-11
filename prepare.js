@@ -1,5 +1,8 @@
 import "dotenv/config";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
+import { DocxLoader } from "@langchain/community/document_loaders/fs/docx";
+import { CSVLoader } from "@langchain/community/document_loaders/fs/csv";
+import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import fs from 'fs';
 import { pipeline } from '@xenova/transformers';
@@ -69,8 +72,27 @@ export function hasDocuments() {
   return vectorStore.documents.length > 0;
 }
 
+function getLoader(filePath) {
+  const ext = filePath.toLowerCase().split('.').pop();
+  
+  switch(ext) {
+    case 'pdf':
+      return new PDFLoader(filePath, { splitPages: false });
+    case 'docx':
+      return new DocxLoader(filePath);
+    case 'csv':
+      return new CSVLoader(filePath);
+    case 'txt':
+    case 'md':
+    case 'markdown':
+      return new TextLoader(filePath);
+    default:
+      throw new Error(`Unsupported file format: ${ext}`);
+  }
+}
+
 export async function indexTheDocument(filePath) {
-  const loader = new PDFLoader(filePath, { splitPages: false });
+  const loader = getLoader(filePath);
   const doc = await loader.load();
 
   const textSplitter = new RecursiveCharacterTextSplitter({

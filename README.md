@@ -1,13 +1,13 @@
-# RAG Chatbot - Document Q&A System
+# RAG Chatbot - Multi-Format Document Q&A System
 
-A **Retrieval-Augmented Generation (RAG)** chatbot that allows you to chat with your PDF documents using AI. The system processes documents, creates vector embeddings, and provides intelligent answers based on document content.
+A **Retrieval-Augmented Generation (RAG)** chatbot with **web interface** that allows you to chat with your documents using AI. The system processes multiple document formats, creates vector embeddings, and provides intelligent answers based on document content.
 
 ## 🚀 What This Project Does
 
-- **Document Processing**: Extracts text from PDF files and splits into manageable chunks
-- **Vector Embeddings**: Converts text to numerical vectors for semantic understanding
+- **Multi-Format Processing**: Supports PDF, Word (.docx), Markdown (.md), CSV, and Text files
+- **Vector Embeddings**: Converts text to 384-dimensional vectors for semantic understanding
 - **Semantic Search**: Finds relevant document sections based on meaning, not just keywords
-- **AI Chat**: Uses large language models to generate human-like responses
+- **AI Chat**: Uses Groq's Llama-3.1 model for fast, intelligent responses
 - **Local Storage**: Saves processed documents locally for fast retrieval
 
 ## 🛠️ Technologies & Models Used
@@ -17,6 +17,7 @@ A **Retrieval-Augmented Generation (RAG)** chatbot that allows you to chat with 
 - **Node.js** - JavaScript runtime environment
 - **LangChain** - Framework for building AI applications
 - **Transformers.js** - Local AI model execution in JavaScript
+- **Express.js** - Web server for chat interface
 
 ### **AI Models**
 
@@ -33,16 +34,19 @@ A **Retrieval-Augmented Generation (RAG)** chatbot that allows you to chat with 
   "@langchain/textsplitters": "Text chunking algorithms",
   "@xenova/transformers": "Local AI model execution",
   "groq-sdk": "Fast LLM inference API",
-  "pdf-parse": "PDF text extraction"
+  "express": "Web server for chat interface",
+  "pdf-parse": "PDF text extraction",
+  "mammoth": "Word document processing",
+  "xlsx": "Excel/CSV file handling"
 }
 ```
 
 ## 🏗️ System Architecture
 
 ```
-PDF Document → Text Extraction → Text Chunking → Vector Embeddings → Local Storage
-                                                                           ↓
-User Query → Vector Embedding → Similarity Search → Context Retrieval → LLM → Response
+Multiple Formats → Text Extraction → Text Chunking → Vector Embeddings → Local Storage
+(PDF/Word/MD/CSV)                                                                ↓
+Web Interface → User Query → Vector Embedding → Similarity Search → Context → LLM → Response
 ```
 
 ## 📁 Project Structure
@@ -51,9 +55,11 @@ User Query → Vector Embedding → Similarity Search → Context Retrieval → 
 Gen_AI/
 ├── prepare.js          # Document processing & vector store
 ├── rag.js             # Document indexing script
-├── chat.js            # Interactive chat interface
+├── chat.js            # Command-line chat interface
+├── server.js          # Web server for chat interface
+├── index.html         # Web chat UI
 ├── documents.json     # Processed document storage
-├── metapercept-doc.pdf # Source document
+├── metapercept-doc.pdf # Sample PDF document
 ├── .env              # API keys
 └── package.json      # Dependencies
 ```
@@ -63,9 +69,23 @@ Gen_AI/
 ### **1. Document Indexing Process (`prepare.js`)**
 
 ```javascript
-// Step 1: Load PDF
-const loader = new PDFLoader(filePath, { splitPages: false });
-const doc = await loader.load();
+// Step 1: Auto-detect format and load
+function getLoader(filePath) {
+  const ext = filePath.toLowerCase().split(".").pop();
+  switch (ext) {
+    case "pdf":
+      return new PDFLoader(filePath);
+    case "docx":
+      return new DocxLoader(filePath);
+    case "md":
+    case "markdown":
+      return new TextLoader(filePath);
+    case "csv":
+      return new CSVLoader(filePath);
+    case "txt":
+      return new TextLoader(filePath);
+  }
+}
 
 // Step 2: Split into chunks
 const textSplitter = new RecursiveCharacterTextSplitter({
@@ -73,7 +93,7 @@ const textSplitter = new RecursiveCharacterTextSplitter({
   chunkOverlap: 100, // 100 character overlap for context
 });
 
-// Step 3: Create embeddings
+// Step 3: Create embeddings using local AI model
 const embedding = await this.embedder(doc.pageContent, {
   pooling: "mean",
   normalize: true,
@@ -99,7 +119,7 @@ cosineSimilarity(a, b) {
 }
 ```
 
-### **3. RAG Pipeline (`chat.js`)**
+### **3. RAG Pipeline (`server.js`)**
 
 ```javascript
 // 1. Search for relevant documents
@@ -148,15 +168,40 @@ echo 'GROQ_API_KEY="your_groq_api_key_here"' > .env
 
 ### **3. Usage**
 
+#### **Command Line Interface:**
+
 ```bash
-# Step 1: Index your PDF document
+# Step 1: Index your document
 node rag.js
 
-# Step 2: Start interactive chat
+# Step 2: Start command-line chat
 node chat.js
 ```
 
+#### **Web Interface (Recommended):**
+
+```bash
+# Step 1: Index your document
+node rag.js
+
+# Step 2: Start web server
+node server.js
+
+# Step 3: Open browser
+# Go to http://localhost:3000
+```
+
 ## 💡 Key Features
+
+### **Multi-Format Document Support**
+
+| Format       | Extensions         | Use Case              | Status       |
+| ------------ | ------------------ | --------------------- | ------------ |
+| **PDF**      | `.pdf`             | Reports, manuals      | ✅ Supported |
+| **Word**     | `.docx`            | Documents, proposals  | ✅ Supported |
+| **Markdown** | `.md`, `.markdown` | Documentation, README | ✅ Supported |
+| **CSV**      | `.csv`             | Data, spreadsheets    | ✅ Supported |
+| **Text**     | `.txt`             | Plain text files      | ✅ Supported |
 
 ### **Semantic Search vs Keyword Search**
 
@@ -180,7 +225,7 @@ node chat.js
 - **Model**: `Xenova/all-MiniLM-L6-v2`
 - **Dimensions**: 384 (each text chunk becomes 384 numbers)
 - **Type**: Sentence transformer optimized for semantic similarity
-- **Size**: ~23MB (downloads automatically on first run)
+- **Size**: ~23MB
 - **Speed**: ~100ms per embedding on modern hardware
 
 ### **Text Chunking Strategy**
@@ -194,9 +239,20 @@ node chat.js
 ```json
 {
   "pageContent": "MetaPercept is a technology company...",
-  "metadata": { "source": "./metapercept-doc.pdf" },
+  "metadata": { "source": "./document.pdf" },
   "embedding": [0.1, -0.3, 0.8, 0.2, ...]
 }
+```
+
+### **Supported File Examples**
+
+```javascript
+// In rag.js, change filePath to any supported format:
+const filePath = "./README.md"; // Markdown
+const filePath = "./document.pdf"; // PDF
+const filePath = "./report.docx"; // Word
+const filePath = "./data.csv"; // CSV
+const filePath = "./notes.txt"; // Text
 ```
 
 ## 🎯 Performance Metrics
@@ -221,14 +277,22 @@ const textSplitter = new RecursiveCharacterTextSplitter({
 ### **Change Search Results**
 
 ```javascript
-// In chat.js
+// In server.js or chat.js
 const results = await vectorStore.similaritySearch(query, 5); // Return top 5 instead of 3
+```
+
+### **Add New File Format**
+
+```javascript
+// In prepare.js, add to getLoader function:
+case 'html':
+  return new HTMLLoader(filePath);
 ```
 
 ### **Modify AI Behavior**
 
 ```javascript
-// In chat.js
+// In server.js
 const response = await groq.chat.completions.create({
   model: "llama-3.1-8b-instant",
   temperature: 0.3, // Higher = more creative, Lower = more factual
@@ -261,9 +325,24 @@ const response = await groq.chat.completions.create({
    ```
 
 4. **Poor search results**
+
    - Increase chunk overlap
    - Use more specific queries
    - Check if document was indexed properly
+
+5. **Web interface not loading**
+
+   ```bash
+   # Solution: Install express and start server
+   npm install express
+   node server.js
+   ```
+
+6. **"Cannot find module" errors**
+   ```bash
+   # Solution: Install missing dependencies
+   npm install
+   ```
 
 ## 📊 Comparison with Other Solutions
 
@@ -277,25 +356,40 @@ const response = await groq.chat.completions.create({
 
 ## 🔮 Future Enhancements
 
-- [ ] Support for multiple file formats (Word, Excel, etc.)
-- [ ] Web interface instead of command line
+- [x] ~~Support for multiple file formats~~ ✅ **COMPLETED**
+- [x] ~~Web interface~~ ✅ **COMPLETED**
 - [ ] Multiple document collections
+- [ ] File upload via web interface
 - [ ] Advanced filtering and metadata search
 - [ ] Integration with external APIs
 - [ ] Conversation memory/history
+- [ ] User authentication
+- [ ] Document management dashboard
 
-## 📝 License
+## 🎯 Quick Start Guide
 
-ISC License - Free for personal and commercial use.
+1. **Clone & Install**
 
-## 🤝 Contributing
+   ```bash
+   git clone <repository>
+   cd Gen_AI
+   npm install
+   ```
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+2. **Add API Key**
 
----
+   ```bash
+   echo 'GROQ_API_KEY="your_key_here"' > .env
+   ```
 
-**Built with ❤️ using modern AI technologies for intelligent document interaction.**
+3. **Index Document**
+
+   ```bash
+   node rag.js
+   ```
+
+4. **Start Web Chat**
+   ```bash
+   node server.js
+   # Open http://localhost:3000
+   ```

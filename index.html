@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .chat-container {
+        flex: 1;
+        background: white;
+        display: flex;
+        flex-direction: column;
+      }
+      .messages {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+      }
+      .message {
+        margin-bottom: 15px;
+      }
+      .user {
+        text-align: right;
+      }
+      .bot {
+        text-align: left;
+      }
+      .message-content {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 10px;
+        max-width: 70%;
+      }
+      .user .message-content {
+        background: #3498db;
+        color: white;
+      }
+      .bot .message-content {
+        background: #ecf0f1;
+        color: #2c3e50;
+      }
+      .input-container {
+        padding: 20px;
+        border-top: 1px solid #ddd;
+        display: flex;
+        gap: 10px;
+      }
+      #messageInput {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      #sendButton {
+        padding: 10px 20px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #sendButton:hover {
+        background: #2980b9;
+      }
+      #sendButton:disabled {
+        background: #bdc3c7;
+        cursor: not-allowed;
+      }
+      .typing {
+        animation: pulse 1.5s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .dots::after {
+        content: ".";
+        animation: dots 1.5s steps(4, end) infinite;
+      }
+      @keyframes dots {
+        0%,
+        20% {
+          content: ".";
+        }
+        40% {
+          content: "..";
+        }
+        60% {
+          content: "...";
+        }
+        80%,
+        100% {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Metapercept ChatBot</h1>
+      </div>
+      <div class="chat-container">
+        <div class="messages" id="messages">
+          <div class="message bot">
+            <div class="message-content">
+              Hello! I'm ready to answer questions about your documents. What
+              would you like to know?
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your question here..."
+          />
+          <button id="sendButton">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const messagesDiv = document.getElementById("messages");
+      const messageInput = document.getElementById("messageInput");
+      const sendButton = document.getElementById("sendButton");
+
+      function addMessage(content, isUser = false, isTyping = false) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `message ${isUser ? "user" : "bot"} ${
+          isTyping ? "typing" : ""
+        }`;
+        messageDiv.innerHTML = `<div class="message-content">${content}</div>`;
+        messagesDiv.appendChild(messageDiv);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        return messageDiv;
+      }
+
+      async function sendMessage() {
+        const message = messageInput.value.trim();
+        if (!message) return;
+
+        addMessage(message, true);
+        messageInput.value = "";
+        sendButton.disabled = true;
+        sendButton.textContent = "Sending...";
+
+        // Show typing indicator
+        const typingDiv = addMessage(
+          '<span class="dots">AI is thinking</span>',
+          false,
+          true
+        );
+
+        try {
+          const response = await fetch("/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message }),
+          });
+
+          const data = await response.json();
+
+          // Remove typing indicator
+          typingDiv.remove();
+
+          // Add actual response
+          addMessage(data.reply);
+        } catch (error) {
+          typingDiv.remove();
+          addMessage("Error: Could not send message");
+        }
+
+        sendButton.disabled = false;
+        sendButton.textContent = "Send";
+      }
+
+      sendButton.addEventListener("click", sendMessage);
+      messageInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+    </script>
+  </body>
+</html>
