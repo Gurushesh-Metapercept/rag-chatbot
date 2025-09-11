@@ -44,8 +44,7 @@ A **Retrieval-Augmented Generation (RAG)** chatbot with **web interface** that a
 ## 🏗️ System Architecture
 
 ```
-Multiple Formats → Text Extraction → Text Chunking → Vector Embeddings → Local Storage
-(PDF/Word/MD/CSV)                                                                ↓
+Multiple Formats → Text Extraction → Text Chunking → Vector Embeddings → Local Storage                                                              ↓
 Web Interface → User Query → Vector Embedding → Similarity Search → Context → LLM → Response
 ```
 
