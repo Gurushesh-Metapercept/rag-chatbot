@@ -2,12 +2,19 @@ import "dotenv/config";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import fs from 'fs';
+import { pipeline } from '@xenova/transformers';
 
 const STORAGE_FILE = './documents.json';
 
 class SimpleVectorStore {
   constructor() {
     this.documents = this.loadDocuments();
+    this.embedder = null;
+    this.initEmbedder();
+  }
+
+  async initEmbedder() {
+    this.embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
   }
 
   loadDocuments() {
@@ -22,25 +29,37 @@ class SimpleVectorStore {
   }
 
   async addDocuments(docs) {
+    if (!this.embedder) await this.initEmbedder();
+    
+    for (const doc of docs) {
+      const embedding = await this.embedder(doc.pageContent, { pooling: 'mean', normalize: true });
+      doc.embedding = Array.from(embedding.data);
+    }
+    
     this.documents.push(...docs);
     this.saveDocuments();
   }
 
   async similaritySearch(query, k = 3) {
+    if (!this.embedder) await this.initEmbedder();
+    
+    const queryEmbedding = await this.embedder(query, { pooling: 'mean', normalize: true });
+    const queryVector = Array.from(queryEmbedding.data);
+    
     return this.documents
       .map(doc => ({
         ...doc,
-        score: this.calculateSimilarity(query, doc.pageContent)
+        score: this.cosineSimilarity(queryVector, doc.embedding)
       }))
       .sort((a, b) => b.score - a.score)
       .slice(0, k);
   }
 
-  calculateSimilarity(query, text) {
-    const queryWords = query.toLowerCase().split(' ');
-    const textWords = text.toLowerCase().split(' ');
-    const matches = queryWords.filter(word => textWords.includes(word));
-    return matches.length / queryWords.length;
+  cosineSimilarity(a, b) {
+    const dotProduct = a.reduce((sum, ai, i) => sum + ai * b[i], 0);
+    const magnitudeA = Math.sqrt(a.reduce((sum, ai) => sum + ai * ai, 0));
+    const magnitudeB = Math.sqrt(b.reduce((sum, bi) => sum + bi * bi, 0));
+    return dotProduct / (magnitudeA * magnitudeB);
   }
 }
 
