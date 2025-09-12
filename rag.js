@@ -1,11 +1,12 @@
 import { indexTheDocument, hasDocuments } from "./prepare.js";
 
 // Supported file formats:
-// const filePath = "./README.md";           // Markdown
-// const filePath = "./metapercept-doc.pdf"; // PDF
-const filePath = "./metapercept-doc.docx"; // Word
-// const filePath = "./data.csv";           // CSV/Excel data
-// const filePath = "./notes.txt";          // Text files
+
+const filePath = "./samples/metapercept-doc.docx"; // Word
+// const filePath = "./samples/metapercept-doc.md;   // Markdown
+// const filePath = "./samples/metapercept-doc.pdf"; // PDF
+// const filePath = "./samples/data.csv";            // CSV/Excel data
+// const filePath = "./samples/notes.txt";           // Text files
 
 if (!hasDocuments()) {
   console.log(`Indexing document: ${filePath}...`);
