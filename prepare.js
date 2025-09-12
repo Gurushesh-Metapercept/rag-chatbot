@@ -4,10 +4,10 @@ import { DocxLoader } from "@langchain/community/document_loaders/fs/docx";
 import { CSVLoader } from "@langchain/community/document_loaders/fs/csv";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import fs from 'fs';
-import { pipeline } from '@xenova/transformers';
+import fs from "fs";
+import { pipeline } from "@xenova/transformers";
 
-const STORAGE_FILE = './documents.json';
+const STORAGE_FILE = "./documents.json";
 
 class SimpleVectorStore {
   constructor() {
@@ -17,12 +17,15 @@ class SimpleVectorStore {
   }
 
   async initEmbedder() {
-    this.embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+    this.embedder = await pipeline(
+      "feature-extraction",
+      "Xenova/all-MiniLM-L6-v2"
+    );
   }
 
   loadDocuments() {
     if (fs.existsSync(STORAGE_FILE)) {
-      return JSON.parse(fs.readFileSync(STORAGE_FILE, 'utf8'));
+      return JSON.parse(fs.readFileSync(STORAGE_FILE, "utf8"));
     }
     return [];
   }
@@ -33,26 +36,32 @@ class SimpleVectorStore {
 
   async addDocuments(docs) {
     if (!this.embedder) await this.initEmbedder();
-    
+
     for (const doc of docs) {
-      const embedding = await this.embedder(doc.pageContent, { pooling: 'mean', normalize: true });
+      const embedding = await this.embedder(doc.pageContent, {
+        pooling: "mean",
+        normalize: true,
+      });
       doc.embedding = Array.from(embedding.data);
     }
-    
+
     this.documents.push(...docs);
     this.saveDocuments();
   }
 
   async similaritySearch(query, k = 3) {
     if (!this.embedder) await this.initEmbedder();
-    
-    const queryEmbedding = await this.embedder(query, { pooling: 'mean', normalize: true });
+
+    const queryEmbedding = await this.embedder(query, {
+      pooling: "mean",
+      normalize: true,
+    });
     const queryVector = Array.from(queryEmbedding.data);
-    
+
     return this.documents
-      .map(doc => ({
+      .map((doc) => ({
         ...doc,
-        score: this.cosineSimilarity(queryVector, doc.embedding)
+        score: this.cosineSimilarity(queryVector, doc.embedding),
       }))
       .sort((a, b) => b.score - a.score)
       .slice(0, k);
@@ -73,18 +82,18 @@ export function hasDocuments() {
 }
 
 function getLoader(filePath) {
-  const ext = filePath.toLowerCase().split('.').pop();
-  
-  switch(ext) {
-    case 'pdf':
+  const ext = filePath.toLowerCase().split(".").pop();
+
+  switch (ext) {
+    case "pdf":
       return new PDFLoader(filePath, { splitPages: false });
-    case 'docx':
+    case "docx":
       return new DocxLoader(filePath);
-    case 'csv':
+    case "csv":
       return new CSVLoader(filePath);
-    case 'txt':
-    case 'md':
-    case 'markdown':
+    case "txt":
+    case "md":
+    case "markdown":
       return new TextLoader(filePath);
     default:
       throw new Error(`Unsupported file format: ${ext}`);
@@ -96,8 +105,8 @@ export async function indexTheDocument(filePath) {
   const doc = await loader.load();
 
   const textSplitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 500,
-    chunkOverlap: 100,
+    chunkSize: 1000,
+    chunkOverlap: 200,
   });
 
   const texts = await textSplitter.splitText(doc[0].pageContent);
