@@ -42,10 +42,14 @@ CRITICAL RULES:
   - **bold** for key terms
   - Numbered lists for processes
   - Bullet points for features
+- MANDATORY: After every answer, you MUST include exactly 3 follow-up questions
+- Format follow-up questions EXACTLY as: "\n\n**Follow-up questions:**\n- Question about X?\n- Question about Y?\n- Question about Z?"
+- Follow-up questions must be directly related to the document content
 - Never include irrelevant context information
 - Be concise and professional
 
-Do NOT provide any context information unless it directly answers the user's question.`
+Do NOT provide any context information unless it directly answers the user's question.
+REMEMBER: Every response MUST end with follow-up questions in the exact format specified.`
         },
         {
           role: 'user',
@@ -56,7 +60,29 @@ Do NOT provide any context information unless it directly answers the user's que
       temperature: 0.1
     });
     
-    res.json({ reply: response.choices[0].message.content });
+    let reply = response.choices[0].message.content;
+    
+    // Ensure follow-up questions are included (only if not already present)
+    if (!reply.includes('**Follow-up questions:**') && !reply.includes('Follow-up questions:')) {
+      const followUpResponse = await groq.chat.completions.create({
+        messages: [
+          {
+            role: 'system',
+            content: 'Generate exactly 3 relevant follow-up questions based on the provided answer and context. Format as: "**Follow-up questions:**\n- Question 1?\n- Question 2?\n- Question 3?"'
+          },
+          {
+            role: 'user',
+            content: `Answer: ${reply}\n\nContext: ${context}\n\nGenerate 3 follow-up questions:`
+          }
+        ],
+        model: 'llama-3.1-8b-instant',
+        temperature: 0.3
+      });
+      
+      reply += '\n\n' + followUpResponse.choices[0].message.content;
+    }
+    
+    res.json({ reply });
   } catch (error) {
     res.json({ reply: 'Error: ' + error.message });
   }

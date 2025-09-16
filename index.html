@@ -105,6 +105,28 @@
         border-radius: 3px;
         font-family: monospace;
       }
+      .follow-up-questions {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #e0e0e0;
+      }
+      .follow-up-question {
+        display: block;
+        margin: 8px 0;
+        padding: 8px 12px;
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 5px;
+        color: #495057;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .follow-up-question:hover {
+        background: #e9ecef;
+        border-color: #3498db;
+        color: #3498db;
+      }
       .input-container {
         position: fixed;
         bottom: 0;
@@ -220,7 +242,20 @@
       const sendButton = document.getElementById("sendButton");
 
       function formatMarkdown(text) {
-        return text
+        // Extract follow-up questions
+        const followUpMatch = text.match(/\*\*Follow-up questions:\*\*\n((?:- .+\?\n?)+)/i);
+        let mainContent = text;
+        let followUpQuestions = [];
+        
+        if (followUpMatch) {
+          mainContent = text.replace(followUpMatch[0], '').trim();
+          followUpQuestions = followUpMatch[1]
+            .split('\n')
+            .filter(q => q.trim().startsWith('- '))
+            .map(q => q.replace(/^- /, '').trim());
+        }
+        
+        let formatted = mainContent
           .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
           .replace(/\*(.*?)\*/g, "<em>$1</em>")
           .replace(/^### (.*$)/gm, "<h3>$1</h3>")
@@ -231,6 +266,21 @@
           .replace(/(`.*?`)/g, "<code>$1</code>")
           .replace(/\n\n/g, "</p><p>")
           .replace(/\n/g, "<br>");
+        
+        if (followUpQuestions.length > 0) {
+          formatted += '<div class="follow-up-questions"><strong>Follow-up questions:</strong>';
+          followUpQuestions.forEach(question => {
+            formatted += `<div class="follow-up-question" onclick="askFollowUp('${question.replace(/'/g, "\\'")}')">💡 ${question}</div>`;
+          });
+          formatted += '</div>';
+        }
+        
+        return formatted;
+      }
+      
+      function askFollowUp(question) {
+        messageInput.value = question;
+        sendMessage();
       }
 
       function addMessage(content, isUser = false, isTyping = false) {
@@ -284,7 +334,23 @@
         }
 
         sendButton.disabled = false;
-        sendButton.textContent = "Send";
+        sendButton.innerHTML = `<svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v13m0-13 4 4m-4-4-4 4"
+              />
+            </svg>`;
       }
 
       sendButton.addEventListener("click", sendMessage);
