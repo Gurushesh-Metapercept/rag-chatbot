@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       * {
         margin: 0;
@@ -11,7 +14,7 @@
         box-sizing: border-box;
       }
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         background: #f5f5f5;
       }
       .container {
@@ -78,7 +81,7 @@
         color: #2c3e50;
         line-height: 1.6;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
       .bot .message-content h1,
       .bot .message-content h2,
@@ -122,7 +125,6 @@
       .bot .message-content strong {
         font-weight: bold;
         color: #2980b9;
-        background: #e8f4fd;
         padding: 2px 4px;
         border-radius: 3px;
       }
@@ -131,7 +133,7 @@
         color: #ecf0f1;
         padding: 3px 6px;
         border-radius: 4px;
-        font-family: 'Courier New', monospace;
+        font-family: "Courier New", monospace;
         font-size: 0.9em;
         border: 1px solid #34495e;
       }
@@ -165,7 +167,7 @@
         background: white;
         border-radius: 5px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
       .bot .message-content th,
       .bot .message-content td {
@@ -205,7 +207,7 @@
         text-decoration: none;
         cursor: pointer;
         transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         font-size: 0.95em;
       }
       .follow-up-question:hover {
@@ -254,7 +256,8 @@
         animation: pulse 1.5s infinite;
       }
       @keyframes pulse {
-        0%, 100% {
+        0%,
+        100% {
           opacity: 1;
         }
         50% {
@@ -266,7 +269,7 @@
       }
       .bot .message-content:hover {
         transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
       .dots::after {
         content: ".";
@@ -334,152 +337,68 @@
       const messagesDiv = document.getElementById("messages");
       const messageInput = document.getElementById("messageInput");
       const sendButton = document.getElementById("sendButton");
-      
-      // Generate unique session ID
-      const sessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 
-      function decodeHtmlEntities(text) {
-        const textarea = document.createElement('textarea');
-        textarea.innerHTML = text;
-        return textarea.value;
-      }
-      
+      // Generate unique session ID
+      const sessionId =
+        "session_" + Date.now() + "_" + Math.random().toString(36).substr(2, 9);
+
       function formatMarkdown(text) {
-        // Decode HTML entities first
-        text = decodeHtmlEntities(text);
-        
         // Extract follow-up questions
-        const followUpMatch = text.match(/\*\*Follow-up questions:\*\*\n((?:- .+\?\n?)+)/i);
+        const followUpMatch = text.match(
+          /\*\*Follow-up questions:\*\*\n((?:- .+\?\n?)+)/i
+        );
         let mainContent = text;
         let followUpQuestions = [];
-        
+
         if (followUpMatch) {
-          mainContent = text.replace(followUpMatch[0], '').trim();
+          mainContent = text.replace(followUpMatch[0], "").trim();
           followUpQuestions = followUpMatch[1]
-            .split('\n')
-            .filter(q => q.trim().startsWith('- '))
-            .map(q => q.replace(/^- /, '').trim());
+            .split("\n")
+            .filter((q) => q.trim().startsWith("- "))
+            .map((q) => q.replace(/^- /, "").trim());
         }
-        
-        // Split text into lines for better processing
-        let lines = mainContent.split('\n');
-        let formatted = '';
-        let inList = false;
-        let listItems = [];
-        
-        for (let i = 0; i < lines.length; i++) {
-          let line = lines[i].trim();
-          
-          // Handle empty lines
-          if (!line) {
-            if (inList) {
-              formatted += `<ul>${listItems.join('')}</ul>`;
-              listItems = [];
-              inList = false;
-            }
-            formatted += '</p><p>';
-            continue;
+
+        // Process code blocks first
+        let formatted = mainContent
+          .replace(/```([\s\S]*?)```/g, "<pre><code>$1</code></pre>")
+          .replace(/`([^`]+)`/g, "<code>$1</code>")
+          .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+          .replace(/\*(.*?)\*/g, "<em>$1</em>")
+          .replace(/^### (.*$)/gm, "<h3>$1</h3>")
+          .replace(/^## (.*$)/gm, "<h2>$1</h2>")
+          .replace(/^# (.*$)/gm, "<h1>$1</h1>")
+          .replace(/^> (.*$)/gm, "<blockquote>$1</blockquote>")
+          .replace(/^\d+\. (.*$)/gm, "<li>$1</li>")
+          .replace(/^- (.*$)/gm, "<li>$1</li>")
+          .replace(/\n\n/g, "</p><p>")
+          .replace(/\n/g, "<br>");
+
+        // Wrap consecutive list items in ul/ol tags
+        formatted = formatted.replace(
+          /(<li>.*?<\/li>(?:<br>)*)+/g,
+          function (match) {
+            const isNumbered = /^\d+\./.test(match);
+            const tag = isNumbered ? "ol" : "ul";
+            return `<${tag}>${match.replace(/<br>/g, "")}</${tag}>`;
           }
-          
-          // Handle headers
-          if (line.startsWith('### ')) {
-            if (inList) {
-              formatted += `<ul>${listItems.join('')}</ul>`;
-              listItems = [];
-              inList = false;
-            }
-            formatted += `<h3>${line.substring(4)}</h3>`;
-            continue;
-          }
-          if (line.startsWith('## ')) {
-            if (inList) {
-              formatted += `<ul>${listItems.join('')}</ul>`;
-              listItems = [];
-              inList = false;
-            }
-            formatted += `<h2>${line.substring(3)}</h2>`;
-            continue;
-          }
-          if (line.startsWith('# ')) {
-            if (inList) {
-              formatted += `<ul>${listItems.join('')}</ul>`;
-              listItems = [];
-              inList = false;
-            }
-            formatted += `<h1>${line.substring(2)}</h1>`;
-            continue;
-          }
-          
-          // Handle bullet points (including asterisks)
-          if (line.match(/^[\*\-•]\s+/)) {
-            let content = line.replace(/^[\*\-•]\s+/, '');
-            content = processInlineMarkdown(content);
-            listItems.push(`<li>${content}</li>`);
-            inList = true;
-            continue;
-          }
-          
-          // Handle numbered lists
-          if (line.match(/^\d+\.\s+/)) {
-            if (inList && listItems.length > 0) {
-              formatted += `<ul>${listItems.join('')}</ul>`;
-              listItems = [];
-            }
-            let content = line.replace(/^\d+\.\s+/, '');
-            content = processInlineMarkdown(content);
-            listItems.push(`<li>${content}</li>`);
-            inList = true;
-            continue;
-          }
-          
-          // Regular paragraph
-          if (inList) {
-            formatted += `<ul>${listItems.join('')}</ul>`;
-            listItems = [];
-            inList = false;
-          }
-          
-          line = processInlineMarkdown(line);
-          formatted += line + '<br>';
-        }
-        
-        // Close any remaining list
-        if (inList) {
-          formatted += `<ul>${listItems.join('')}</ul>`;
-        }
-        
-        // Clean up extra breaks and wrap in paragraphs
-        formatted = formatted
-          .replace(/<br>\s*<\/p><p>/g, '</p><p>')
-          .replace(/^<br>/, '')
-          .replace(/<br>$/, '');
-        
-        // Add follow-up questions
+        );
+
+        // Add follow-up questions with enhanced styling
         if (followUpQuestions.length > 0) {
-          formatted += '<div class="follow-up-questions"><strong>💡 Follow-up questions:</strong>';
-          followUpQuestions.forEach(question => {
-            formatted += `<div class="follow-up-question" onclick="askFollowUp('${question.replace(/'/g, "\\'")}')">❓ ${question}</div>`;
+          formatted +=
+            '<div class="follow-up-questions"><strong>💡 Follow-up questions:</strong>';
+          followUpQuestions.forEach((question) => {
+            formatted += `<div class="follow-up-question" onclick="askFollowUp('${question.replace(
+              /'/g,
+              "\\'"
+            )}')">❓ ${question}</div>`;
           });
-          formatted += '</div>';
+          formatted += "</div>";
         }
-        
+
         return formatted;
       }
-      
-      function processInlineMarkdown(text) {
-        return text
-          // Code blocks first
-          .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
-          .replace(/`([^`]+)`/g, '<code>$1</code>')
-          // Bold text
-          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          // Italic text (single asterisk or underscore)
-          .replace(/(?<!\*)\*([^\*\n]+?)\*(?!\*)/g, '<em>$1</em>')
-          .replace(/_([^_\n]+?)_/g, '<em>$1</em>')
-          // Blockquotes
-          .replace(/^> (.*$)/gm, '<blockquote>$1</blockquote>');
-      }
-      
+
       function askFollowUp(question) {
         messageInput.value = question;
         sendMessage();
@@ -496,7 +415,13 @@
           formattedContent = content;
         } else {
           const formatted = formatMarkdown(content);
-          formattedContent = formatted.startsWith('<h') || formatted.startsWith('<ul') || formatted.startsWith('<ol') || formatted.startsWith('<pre') ? formatted : `<p>${formatted}</p>`;
+          formattedContent =
+            formatted.startsWith("<h") ||
+            formatted.startsWith("<ul") ||
+            formatted.startsWith("<ol") ||
+            formatted.startsWith("<pre")
+              ? formatted
+              : `<p>${formatted}</p>`;
         }
         messageDiv.innerHTML = `<div class="message-content">${formattedContent}</div>`;
 
@@ -533,7 +458,7 @@
           // Remove typing indicator
           typingDiv.remove();
 
-          // Add actual response with proper decoding
+          // Add actual response
           addMessage(data.reply);
         } catch (error) {
           typingDiv.remove();

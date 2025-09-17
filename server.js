@@ -11,12 +11,6 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 app.use(express.json());
 app.use(express.static("."));
 
-// Middleware to set proper headers
-app.use((req, res, next) => {
-  res.header('Content-Type', 'application/json; charset=utf-8');
-  next();
-});
-
 // Store conversation context
 const conversations = new Map();
 
@@ -53,30 +47,6 @@ function preprocessQuery(query) {
   });
 
   return processed;
-}
-
-// Format AI response for better readability
-function formatResponse(response) {
-  let formatted = response;
-  
-  // Convert asterisk bullet points to proper markdown
-  formatted = formatted.replace(/^\* /gm, '- ');
-  
-  // Add headers for common patterns
-  formatted = formatted
-    .replace(/(Key features?|Main benefits?|Important points?):?\s*/gi, '### $1\n\n')
-    .replace(/(Steps?|Process|How it works?):?\s*/gi, '### $1\n\n')
-    .replace(/(Technologies?|Tools?|Components?):?\s*/gi, '### $1\n\n')
-    .replace(/(Examples?|Use cases?):?\s*/gi, '### $1\n\n');
-  
-  // Ensure proper list formatting
-  formatted = formatted.replace(/(\d+\.)\s+/g, '\n$1 ');
-  formatted = formatted.replace(/^([\u2022\*-])\s+/gm, '- ');
-  
-  // Clean up spacing
-  formatted = formatted.replace(/\n{3,}/g, '\n\n');
-  
-  return formatted.trim();
 }
 
 // Generate follow-up questions based on context
@@ -212,37 +182,55 @@ app.post("/chat", async (req, res) => {
           role: "system",
           content: `You are a helpful AI assistant that answers questions based on provided document context.
 
-Formatting Rules:
-- Use **bold** for important terms and concepts
-- Use bullet points (- ) for lists
-- Use numbered lists (1. ) for steps or processes
-- Use ### for section headers when appropriate
-- Use \`code\` for technical terms, file names, and commands
-- Structure responses with clear paragraphs
-- Add line breaks between different topics
+## Response Formatting Guidelines
 
-Content Rules:
+**Visual Structure:**
+- Start with a clear, engaging opening sentence
+- Use **bold** for key terms, important concepts, and emphasis
+- Use \`code formatting\` for technical terms, file names, commands, and specific values
+- Use > blockquotes for important notes, warnings, or key takeaways
+- Create visual hierarchy with proper spacing between sections
+
+**Content Organization:**
+- Break information into digestible paragraphs (2-3 sentences each)
+- Use bullet points (-) for feature lists, benefits, or related items
+- Use numbered lists (1. 2. 3.) for sequential steps or processes
+- NEVER use ### headers in the middle of sentences or words
+- Only use ### headers at the start of new lines for major sections
+- Write in flowing paragraphs without unnecessary headers
+- Add blank lines between different topics for better readability
+
+**Writing Style:**
+- Write in a conversational yet professional tone
+- Start with the most important information first
+- Use active voice and clear, concise language
+- Provide specific examples when available in context
+- End paragraphs with strong, informative statements
+
+**Content Rules:**
 1. Answer ONLY using information from the provided context
-2. If the context doesn't contain relevant information, say "I don't have information about that in the provided documents"
-3. Be specific and cite relevant details from the context
-4. Keep responses clear and well-structured with proper formatting
-5. ${
+2. If context lacks relevant info, say "I don't have information about that in the provided documents"
+3. Be specific and cite relevant details from context
+4. ${
             isFollowUpResponse
               ? "Focus on providing detailed information about the requested topic from the context"
               : "End with a relevant follow-up question to continue the conversation"
           }
-6. If asked about topics not in the context, politely redirect to document-related questions`,
+5. Structure responses with clear visual hierarchy and proper markdown formatting`,
         },
         {
           role: "user",
           content: `Context: ${context}\n\nQuestion: ${message}`,
         },
       ],
-      model: "llama-3.1-8b-instant",
+      model: "openai/gpt-oss-120b", //llama-3.3-70b-versatile
       temperature: 0.1,
     });
 
-    let reply = formatResponse(response.choices[0].message.content);
+    let reply = response.choices[0].message.content
+      .replace(/###\s*([a-z])/g, "$1") // Remove ### before lowercase words
+      .replace(/###\s*$/gm, "") // Remove standalone ### at line ends
+      .trim();
 
     // Add follow-up question only for new queries, not follow-up responses
     if (!isFollowUpResponse) {
