@@ -240,6 +240,9 @@
       const messagesDiv = document.getElementById("messages");
       const messageInput = document.getElementById("messageInput");
       const sendButton = document.getElementById("sendButton");
+      
+      // Generate unique session ID
+      const sessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 
       function formatMarkdown(text) {
         // Extract follow-up questions
@@ -318,7 +321,7 @@
           const response = await fetch("/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message }),
+            body: JSON.stringify({ message, sessionId }),
           });
 
           const data = await response.json();

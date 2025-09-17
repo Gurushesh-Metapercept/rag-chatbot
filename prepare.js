@@ -110,16 +110,22 @@ export async function indexTheDocument(filePath) {
   const doc = await loader.load();
 
   const textSplitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 1000,
-    chunkOverlap: 200,
+    chunkSize: 800,  // Smaller chunks for better precision
+    chunkOverlap: 150,
+    separators: ['\n\n', '\n', '. ', ' ', ''],  // Better sentence preservation
   });
 
   const texts = await textSplitter.splitText(doc[0].pageContent);
 
-  const documents = texts.map((chunk) => {
+  const documents = texts.map((chunk, index) => {
     return {
       pageContent: chunk,
-      metadata: doc[0].metadata,
+      metadata: {
+        ...doc[0].metadata,
+        chunkIndex: index,
+        chunkLength: chunk.length,
+        source: filePath
+      },
     };
   });
 

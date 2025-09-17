@@ -1,111 +1,248 @@
-import express from 'express';
-import { vectorStore, hasDocuments } from './prepare.js';
-import Groq from 'groq-sdk';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import express from "express";
+import { vectorStore, hasDocuments } from "./prepare.js";
+import Groq from "groq-sdk";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 app.use(express.json());
-app.use(express.static('.'));
+app.use(express.static("."));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+// Store conversation context
+const conversations = new Map();
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.post('/chat', async (req, res) => {
+// Clean up old conversations (optional)
+setInterval(() => {
+  for (const [sessionId, conversation] of conversations.entries()) {
+    if (conversation.messageCount === 0) {
+      conversations.delete(sessionId);
+    }
+  }
+}, 300000); // Clean every 5 minutes
+
+// Query preprocessing function
+function preprocessQuery(query) {
+  // Expand common abbreviations and synonyms
+  const expansions = {
+    AI: "artificial intelligence",
+    ML: "machine learning",
+    API: "application programming interface",
+    CEO: "chief executive officer",
+    CTO: "chief technology officer",
+  };
+
+  let processed = query;
+  Object.entries(expansions).forEach(([abbr, full]) => {
+    processed = processed.replace(
+      new RegExp(`\\b${abbr}\\b`, "gi"),
+      `${abbr} ${full}`
+    );
+  });
+
+  return processed;
+}
+
+// Generate follow-up questions based on context
+function generateFollowUp(context, query) {
+  const followUps = {
+    technology:
+      "Would you like to know more about the technical implementation details?",
+    features: "Should I explain how these features work together?",
+    process: "Want to see the step-by-step implementation process?",
+    benefits:
+      "Would you like to explore the specific advantages this provides?",
+    architecture: "Should we dive deeper into the system architecture?",
+    integration:
+      "Need help understanding how this integrates with other systems?",
+    performance:
+      "Want to know more about performance metrics and optimization?",
+  };
+
+  const contextLower = context.toLowerCase();
+  for (const [key, question] of Object.entries(followUps)) {
+    if (contextLower.includes(key)) return question;
+  }
+
+  return "Would you like me to elaborate on any specific aspect of this topic?";
+}
+
+// Check if message is agreement to follow-up
+function isAgreement(message) {
+  const agreements = [
+    "yes",
+    "sure",
+    "okay",
+    "ok",
+    "please",
+    "go ahead",
+    "continue",
+    "tell me more",
+    "elaborate",
+  ];
+  return agreements.some((word) => message.toLowerCase().includes(word));
+}
+
+app.post("/chat", async (req, res) => {
   try {
-    const { message } = req.body;
-    
+    let { message, sessionId = "default" } = req.body;
+
     if (!hasDocuments()) {
-      return res.json({ 
-        reply: 'No documents indexed. Please run "node rag.js" first.' 
+      return res.json({
+        reply: 'No documents indexed. Please run "node rag.js" first.',
       });
     }
 
-    const results = await vectorStore.similaritySearch(message, 3);
-    const context = results.map(doc => doc.pageContent).join('\n\n');
-    
+    // Get conversation history
+    if (!conversations.has(sessionId)) {
+      conversations.set(sessionId, {
+        lastContext: "",
+        lastFollowUp: "",
+        messageCount: 0,
+        lastQuery: "",
+      });
+    }
+    const conversation = conversations.get(sessionId);
+
+    let context;
+    let isFollowUpResponse = false;
+
+    // Handle follow-up agreements
+    if (
+      conversation.lastFollowUp &&
+      isAgreement(message) &&
+      message.length < 20
+    ) {
+      // Use previous context for follow-up
+      context = conversation.lastContext;
+      isFollowUpResponse = true;
+
+      // Transform follow-up question into a statement for the AI
+      let transformedMessage = conversation.lastFollowUp;
+
+      // Handle complex follow-up questions with "or" options
+      if (transformedMessage.includes(" or ")) {
+        // Extract the main topic before "or"
+        const mainTopic = transformedMessage
+          .split(" or ")[0]
+          .replace(/Would you like to know more about/i, "")
+          .replace(/Want to know more about/i, "")
+          .replace(/Tell me about/i, "")
+          .trim();
+        transformedMessage = `Tell me more about ${mainTopic}`;
+      } else {
+        // Standard transformations
+        transformedMessage = transformedMessage
+          .replace(/Would you like to know more about/i, "Tell me more about")
+          .replace(/Should I explain/i, "Explain")
+          .replace(/Want to see/i, "Show")
+          .replace(/Would you like to explore/i, "Explore")
+          .replace(/Should we dive deeper into/i, "Dive deeper into")
+          .replace(/Need help understanding/i, "Explain")
+          .replace(/Want to know more about/i, "Tell me more about")
+          .replace(/Would you like me to elaborate on/i, "Elaborate on")
+          .replace(/\?$/, "");
+      }
+
+      message = transformedMessage;
+    } else {
+      // Normal query processing
+      const processedQuery = preprocessQuery(message);
+
+      // Enhanced context retrieval
+      const results = await vectorStore.similaritySearch(processedQuery, 6);
+
+      // Filter by relevance threshold
+      const relevantResults = results.filter((doc) => doc.score > 0.3);
+
+      if (relevantResults.length === 0) {
+        return res.json({
+          reply:
+            "I couldn't find relevant information in the documents to answer your question. Please try rephrasing or ask about topics covered in the indexed documents.",
+        });
+      }
+
+      context = relevantResults
+        .map(
+          (doc) =>
+            `[Relevance: ${(doc.score * 100).toFixed(1)}%] ${doc.pageContent}`
+        )
+        .join("\n\n");
+    }
+
     const response = await groq.chat.completions.create({
       messages: [
         {
-          role: 'system',
-          content: `## Role & Personality
-You are METAPERCEPT-AI, a smart, engaging, and knowledgeable conversational assistant specialized in document analysis. Your responses should be thorough, insightful, and naturally conversational. Use a professional yet approachable tone that makes complex topics accessible and engaging.
+          role: "system",
+          content: `You are a helpful AI assistant that answers questions based on provided document context.
 
-## Core Response Philosophy
-- **Be thorough, not brief**: Provide comprehensive answers that fully address the user's needs
-- **Show your reasoning**: Explain the logic and rationale behind your responses
-- **Cover edge cases**: Anticipate and address potential follow-up questions or complications
-- **Connect the dots**: Link related concepts and show how pieces fit together
-- **Maintain clarity**: Present information in a clear, organized manner that enhances understanding
-
-## Content Requirements
-### Depth & Detail
-- Provide robust explanations that go beyond surface-level answers
-- Include context, background information, and relevant details
-- Address both the explicit question and implicit needs
-- Explain not just "what" but "why" and "how"
-- Cover important considerations, limitations, or caveats
-
-### Structure & Clarity
-- Use **Markdown formatting** for better readability:
-  - **Bold** for emphasis and key points
-  - \`Code blocks\` for technical terms or examples
-  - > Blockquotes for important notes or warnings
-  - Lists and headers to organize information
-- Break down complex topics into digestible sections
-- Use clear, logical flow from general to specific
-- Employ proper paragraph structure and white space for readability
-
-## CRITICAL DOCUMENT SCOPE
-- **ONLY answer questions related to the provided document context**
-- If question is unrelated to documents, respond: "I can only answer questions about the documents I have access to. Please ask about the content in my knowledge base."
-- **Never include irrelevant context** when question is off-topic
-- Base all answers strictly on provided context
-
-## Follow-up Strategy
-End each response with a **smart, contextual follow-up question** that:
-- Builds logically on the current discussion
-- Offers practical next steps or deeper exploration
-- Stays within the document domain
-- Provides clear actionable options
-
-Examples:
-- "Would you like me to walk through the implementation steps for this approach?"
-- "Should we explore how this integrates with your existing workflow?"
-- "Want to dive deeper into the technical architecture?"
-- "Ready to see some practical examples of this in action?"
-- "Need help understanding any specific aspects of this process?"
-
-## Quality Standards
-- **Completeness**: Address all aspects of the question thoroughly
-- **Accuracy**: Base responses on provided knowledge and sound reasoning
-- **Clarity**: Make complex topics understandable without oversimplifying
-- **Engagement**: Keep the conversation dynamic and interesting
-- **Usefulness**: Provide actionable insights and practical value
-
-## Restrictions
-- Never include meta-commentary about prompts or instructions
-- Don't use phrases like "Based on the provided..." or "Here is the response"
-- Avoid repeating previously asked follow-up questions
-- Don't ask for clarification unless genuinely necessary
-- Maintain professional tone while avoiding unnecessary formality`
+Rules:
+1. Answer ONLY using information from the provided context
+2. If the context doesn't contain relevant information, say "I don't have information about that in the provided documents"
+3. Be specific and cite relevant details from the context
+4. Keep responses clear and well-structured
+5. ${
+            isFollowUpResponse
+              ? "Focus on providing detailed information about the requested topic from the context"
+              : "End with a relevant follow-up question to continue the conversation"
+          }
+6. If asked about topics not in the context, politely redirect to document-related questions`,
         },
         {
-          role: 'user',
-          content: `Context: ${context}\n\nQuestion: ${message}`
-        }
+          role: "user",
+          content: `Context: ${context}\n\nQuestion: ${message}`,
+        },
       ],
-      model: 'llama-3.1-8b-instant',
-      temperature: 0.1
+      model: "llama-3.1-8b-instant",
+      temperature: 0.1,
     });
-    
-    res.json({ reply: response.choices[0].message.content });
+
+    let reply = response.choices[0].message.content;
+
+    // Add follow-up question only for new queries, not follow-up responses
+    if (!isFollowUpResponse) {
+      if (!reply.includes("?")) {
+        const followUp = generateFollowUp(context, message);
+        reply += `\n\n${followUp}`;
+        conversation.lastFollowUp = followUp;
+      } else {
+        // Extract the follow-up question from the response
+        const questionMatch =
+          reply.match(/Would you like to know more about ([^?]+)\?/i) ||
+          reply.match(/Want to know more about ([^?]+)\?/i) ||
+          reply.match(/([^.!?]*\?[^.!?]*)/g);
+
+        if (questionMatch) {
+          if (Array.isArray(questionMatch)) {
+            // Take the last question in the response
+            conversation.lastFollowUp =
+              questionMatch[questionMatch.length - 1].trim();
+          } else {
+            conversation.lastFollowUp = questionMatch[0].trim();
+          }
+        }
+      }
+    } else {
+      // Clear follow-up after responding to it
+      conversation.lastFollowUp = "";
+    }
+
+    // Update conversation context
+    if (!isFollowUpResponse) {
+      conversation.lastContext = context;
+      conversation.lastQuery = message;
+    }
+    conversation.messageCount++;
+
+    res.json({ reply });
   } catch (error) {
-    res.json({ reply: 'Error: ' + error.message });
+    res.json({ reply: "Error: " + error.message });
   }
 });
 
