@@ -158,21 +158,19 @@ app.post("/chat", async (req, res) => {
       // Enhanced context retrieval
       const results = await vectorStore.similaritySearch(processedQuery, 6);
 
-      // Filter by relevance threshold
-      const relevantResults = results.filter((doc) => doc.score > 0.3);
-
-      if (relevantResults.length === 0) {
+      if (results.length === 0) {
         return res.json({
           reply:
             "I couldn't find relevant information in the documents to answer your question. Please try rephrasing or ask about topics covered in the indexed documents.",
         });
       }
 
-      context = relevantResults
-        .map(
-          (doc) =>
-            `[Relevance: ${(doc.score * 100).toFixed(1)}%] ${doc.pageContent}`
-        )
+      context = results
+        .map((result) => {
+          const doc = Array.isArray(result) ? result[0] : result;
+          const score = Array.isArray(result) ? result[1] : 1;
+          return `[Relevance: ${(score * 100).toFixed(1)}%] ${doc.pageContent}`;
+        })
         .join("\n\n");
     }
 
@@ -223,7 +221,7 @@ app.post("/chat", async (req, res) => {
           content: `Context: ${context}\n\nQuestion: ${message}`,
         },
       ],
-      model: "openai/gpt-oss-120b", //llama-3.3-70b-versatile
+      model: "llama-3.1-8b-instant", //llama-3.3-70b-versatile  // llama-3.1-8b-instant // llama-3.3-70b-versatile
       temperature: 0.1,
     });
 
