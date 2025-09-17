@@ -81,6 +81,11 @@ export function hasDocuments() {
   return vectorStore.documents.length > 0;
 }
 
+export function clearDocuments() {
+  vectorStore.documents = [];
+  vectorStore.saveDocuments();
+}
+
 function getLoader(filePath) {
   const ext = filePath.toLowerCase().split(".").pop();
 
